@@ -54,11 +54,7 @@ document.addEventListener('DOMContentLoaded', function() {
             subjectField.value = `Patient Path NYC - Contact Form [ID: ${formId}]`;
 
             // Debug logging
-            console.log('=== Contact Form Subject Line Debug ===');
-            console.log('Generated Form ID:', formId);
-            console.log('Full Subject Line:', subjectField.value);
-            console.log('Timestamp:', new Date().toISOString());
-            console.log('=======================================');
+            console.log('Contact Form Subject Line Debug:', subjectField.value);
         }
     }
 });
