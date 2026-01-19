@@ -2,7 +2,8 @@
   "@context": "https://schema.org",
   "@type": "MedicalBusiness",
   "name": "Patient Path NYC",
-  "description": "Professional patient advocacy services for hospitalized patients in New York City. Board certified independent patient advocate offering personalized care coordination.",
+  "alternateName": "Patient Path New York City",
+  "description": "Professional patient advocacy services for hospitalized patients in New York City. Board certified independent patient advocate offering personalized care coordination, medical crisis management, and discharge planning.",
   "url": "https://www.patientpathnyc.com",
   "telephone": "+1-917-283-2765",
   "email": "shlomit@patientpathnyc.com",
@@ -12,12 +13,119 @@
     "addressRegion": "NY",
     "addressCountry": "US"
   },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "40.7128",
+    "longitude": "-74.0060"
+  },
+  "areaServed": [
+    {
+      "@type": "City",
+      "name": "New York City",
+      "containedInPlace": {
+        "@type": "State",
+        "name": "New York"
+      }
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "Manhattan"
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "Brooklyn"
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "Queens"
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "The Bronx"
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "Nassau County",
+      "containedInPlace": {
+        "@type": "State",
+        "name": "New York"
+      }
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "Westchester County",
+      "containedInPlace": {
+        "@type": "State",
+        "name": "New York"
+      }
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "South Fairfield County",
+      "containedInPlace": {
+        "@type": "State",
+        "name": "Connecticut"
+      }
+    }
+  ],
   "founder": {
     "@type": "Person",
-    "name": "Shlomit",
+    "name": "Shlomit Liberty",
+    "givenName": "Shlomit",
+    "familyName": "Liberty",
+    "honorificSuffix": ["MS", "MA", "CCC-SLP", "BCPA"],
     "jobTitle": "Board Certified Independent Patient Advocate",
-    "description": "Medical Speech Language Pathologist with experience at Stanford, San Jose Regional Hospital, and NY Presbyterian",
-    "email": "shlomit@patientpathnyc.com"
+    "description": "Board Certified Independent Patient Advocate specialized in complex medical conditions, personal medical crisis management, and care navigation. Medical Speech Language Pathologist with more than a decade of healthcare experience.",
+    "email": "shlomit@patientpathnyc.com",
+    "alumniOf": [
+      {
+        "@type": "EducationalOrganization",
+        "name": "New York University",
+        "department": "Clinical Master's Degree in Speech Language Pathology"
+      }
+    ],
+    "worksFor": {
+      "@type": "MedicalBusiness",
+      "name": "Patient Path NYC"
+    },
+    "hasCredential": [
+      {
+        "@type": "EducationalOccupationalCredential",
+        "credentialCategory": "Board Certification",
+        "name": "Board Certified Patient Advocate (BCPA)"
+      },
+      {
+        "@type": "EducationalOccupationalCredential",
+        "credentialCategory": "Professional License",
+        "name": "Certificate of Clinical Competence in Speech-Language Pathology (CCC-SLP)"
+      }
+    ],
+    "memberOf": [
+      {
+        "@type": "Organization",
+        "name": "Patient Advocacy Board Certification (PABC)"
+      },
+      {
+        "@type": "Organization",
+        "name": "Global Nurses Association (GNA)"
+      },
+      {
+        "@type": "Organization",
+        "name": "Pulse"
+      },
+      {
+        "@type": "Organization",
+        "name": "The Circle"
+      },
+      {
+        "@type": "Organization",
+        "name": "HealthAdvocateX"
+      },
+      {
+        "@type": "Organization",
+        "name": "NAHAC"
+      }
+    ]
   },
   "hasOfferCatalog": {
     "@type": "OfferCatalog",
@@ -27,35 +135,82 @@
         "@type": "Offer",
         "itemOffered": {
           "@type": "Service",
-          "name": "Understand Your Status",
-          "description": "Daily chart review, verbal and written updates, medical clarification to help you understand your condition and treatment plan."
+          "name": "Getting Started - Initial Consultation",
+          "description": "Free 20-minute intake meeting where we answer your questions and explain our process. In-depth review of medical history and current status. Work with you and your family to understand your options and wishes. Help communicate your choices to your team.",
+          "provider": {
+            "@type": "MedicalBusiness",
+            "name": "Patient Path NYC"
+          },
+          "category": "Patient Advocacy",
+          "serviceType": "Initial Consultation"
+        },
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Hospital Care Management",
+          "description": "Continuous tracking of medical status with daily medical chart reviews and team communication. Ensure treatment plans are being followed. In-person hospital visits as needed. Attend family meetings and help resolve conflicts.",
+          "provider": {
+            "@type": "MedicalBusiness",
+            "name": "Patient Path NYC"
+          },
+          "category": "Patient Advocacy",
+          "serviceType": "In-Hospital Advocacy"
+        },
+        "priceSpecification": {
+          "@type": "PriceSpecification",
+          "price": "Contact for pricing",
+          "priceCurrency": "USD"
         }
       },
       {
         "@type": "Offer",
         "itemOffered": {
           "@type": "Service",
-          "name": "Communicate Your Needs",
-          "description": "In-hospital visits, team communication, and family meeting attendance to ensure your voice is heard."
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Plan Your Recovery",
-          "description": "Personalized care planning, facility research, and access to our rehabilitation network for a smooth transition."
+          "name": "Discharge Planning and Recovery Support",
+          "description": "Ensure discharge plan is safe and aligned with your goals. Research and advise next steps - at home or in a facility. Connect you with network of specialists. Stay actively involved until you safely transition to appropriate next level of care.",
+          "provider": {
+            "@type": "MedicalBusiness",
+            "name": "Patient Path NYC"
+          },
+          "category": "Patient Advocacy",
+          "serviceType": "Discharge Planning"
+        },
+        "priceSpecification": {
+          "@type": "PriceSpecification",
+          "price": "Contact for pricing",
+          "priceCurrency": "USD"
         }
       }
     ]
   },
-  "areaServed": {
-    "@type": "City",
-    "name": "New York City"
-  },
-  "sameAs": [
-    "https://www.facebook.com/patientpathnyc",
-    "https://www.instagram.com/patientpathnyc",
-    "https://twitter.com/patientpathnyc"
-  ]
+  "medicalSpecialty": [
+    "Patient Advocacy",
+    "Care Coordination",
+    "Discharge Planning",
+    "Medical Crisis Management"
+  ],
+  "availableService": [
+    {
+      "@type": "MedicalProcedure",
+      "name": "Medical Chart Review",
+      "description": "Daily review of medical records, physician entries, nursing updates, labs, imaging, and medication administration records"
+    },
+    {
+      "@type": "MedicalProcedure",
+      "name": "Care Team Communication",
+      "description": "Direct communication with physicians, nurses, therapists, and case management staff to ensure coordinated care"
+    },
+    {
+      "@type": "MedicalProcedure",
+      "name": "Family Meeting Facilitation",
+      "description": "Attendance and facilitation of family meetings to ensure clear communication and decision-making"
+    }
+  ],
+  "paymentAccepted": ["Cash", "Check", "Credit Card"],
+  "currenciesAccepted": "USD",
+  "priceRange": "Contact for pricing"
 }
