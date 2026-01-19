@@ -1,0 +1,61 @@
+{
+  "@context": "https://schema.org",
+  "@type": "MedicalBusiness",
+  "name": "Patient Path NYC",
+  "description": "Professional patient advocacy services for hospitalized patients in New York City. Board certified independent patient advocate offering personalized care coordination.",
+  "url": "https://www.patientpathnyc.com",
+  "telephone": "+1-917-283-2765",
+  "email": "shlomit@patientpathnyc.com",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "New York",
+    "addressRegion": "NY",
+    "addressCountry": "US"
+  },
+  "founder": {
+    "@type": "Person",
+    "name": "Shlomit",
+    "jobTitle": "Board Certified Independent Patient Advocate",
+    "description": "Medical Speech Language Pathologist with experience at Stanford, San Jose Regional Hospital, and NY Presbyterian",
+    "email": "shlomit@patientpathnyc.com"
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Patient Advocacy Services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Understand Your Status",
+          "description": "Daily chart review, verbal and written updates, medical clarification to help you understand your condition and treatment plan."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Communicate Your Needs",
+          "description": "In-hospital visits, team communication, and family meeting attendance to ensure your voice is heard."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Plan Your Recovery",
+          "description": "Personalized care planning, facility research, and access to our rehabilitation network for a smooth transition."
+        }
+      }
+    ]
+  },
+  "areaServed": {
+    "@type": "City",
+    "name": "New York City"
+  },
+  "sameAs": [
+    "https://www.facebook.com/patientpathnyc",
+    "https://www.instagram.com/patientpathnyc",
+    "https://twitter.com/patientpathnyc"
+  ]
+}

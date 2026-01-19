@@ -1,0 +1,15 @@
+# humanstxt.org
+
+/* TEAM */
+Website Owner: Shlomit
+Contact: shlomit@patientpathnyc.com
+Location: New York City, NY
+
+/* SITE */
+Last update: 2025/01/05
+Standards: HTML5, CSS3
+Components: Responsive Design, Schema.org Structured Data
+Software: Custom HTML/CSS/JavaScript, PHP
+
+/* THANKS */
+Built with care for patient advocacy services in NYC
