@@ -41,4 +41,17 @@ document.addEventListener('DOMContentLoaded', function() {
     // Form submission handling - Formsubmit.co handles the actual submission
     // The form will redirect to Formsubmit's default thank you page
     // Optional: You can customize this by adding _next parameter to redirect to your own thank you page
+
+    // Generate unique form ID for subject line
+    const contactForm = document.getElementById('contactForm');
+    if (contactForm) {
+        const subjectField = contactForm.querySelector('input[name="_subject"]');
+        if (subjectField) {
+            // Generate random 6-digit hex ID
+            const formId = Math.floor(Math.random() * 0xFFFFFF).toString(16).toUpperCase().padStart(6, '0');
+
+            // Update subject line with unique ID
+            subjectField.value = `Patient Path NYC - Contact Form [ID: ${formId}]`;
+        }
+    }
 });
