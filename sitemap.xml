@@ -5,7 +5,7 @@
     <!-- Homepage -->
     <url>
         <loc>https://www.patientpathnyc.com/</loc>
-        <lastmod>2026-01-18</lastmod>
+        <lastmod>2026-02-03</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
@@ -13,7 +13,7 @@
     <!-- FAQ Page -->
     <url>
         <loc>https://www.patientpathnyc.com/faq.html</loc>
-        <lastmod>2026-01-18</lastmod>
+        <lastmod>2026-02-03</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
@@ -21,9 +21,65 @@
     <!-- Resources Page -->
     <url>
         <loc>https://www.patientpathnyc.com/resources.html</loc>
-        <lastmod>2026-01-18</lastmod>
+        <lastmod>2026-02-03</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- Resource: Navigating Your Hospital Stay -->
+    <url>
+        <loc>https://www.patientpathnyc.com/navigating-hospital-stay.html</loc>
+        <lastmod>2026-02-03</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
+    </url>
+
+    <!-- Resource: Medical History Form -->
+    <url>
+        <loc>https://www.patientpathnyc.com/medical-history-form.html</loc>
+        <lastmod>2026-02-03</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Resource: How To Pack for a Hospital Stay -->
+    <url>
+        <loc>https://www.patientpathnyc.com/pack-for-hospital-stay.html</loc>
+        <lastmod>2026-02-03</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Resource: How to Communicate Your Symptoms -->
+    <url>
+        <loc>https://www.patientpathnyc.com/communicate-symptoms.html</loc>
+        <lastmod>2026-02-03</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Resource: How to Fight Hospital Acquired Infections -->
+    <url>
+        <loc>https://www.patientpathnyc.com/fight-hospital-infections.html</loc>
+        <lastmod>2026-02-03</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Resource: How to Prepare for a Safe Discharge -->
+    <url>
+        <loc>https://www.patientpathnyc.com/safe-discharge.html</loc>
+        <lastmod>2026-02-03</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Thank You Page -->
+    <url>
+        <loc>https://www.patientpathnyc.com/thank-you.html</loc>
+        <lastmod>2026-02-03</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
     </url>
 
 </urlset>

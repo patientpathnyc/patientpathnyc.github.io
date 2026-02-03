@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) - start -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FN54P65Y3Y"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-FN54P65Y3Y');
+    </script>
+    <!-- Google tag (gtag.js) - end -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Medical history and contact information form to prepare for your hospital stay.">
+    <meta name="keywords" content="medical history form, hospital preparation, patient advocacy, NYC patient care">
+    <meta name="author" content="Shlomit Liberty, Patient Path NYC">
+    <meta property="og:title" content="Medical History Form - Patient Path NYC">
+    <meta property="og:description" content="Comprehensive form to organize your medical history and contact information before a hospital stay.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.patientpathnyc.com/medical-history-form.html">
+    <title>Medical History Form - Patient Path NYC</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .form-section {
+            background: #fff;
+            border-radius: 10px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .form-section h3 {
+            color: #136BB8;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #136BB8;
+        }
+        .form-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+        .form-field {
+            margin-bottom: 1rem;
+        }
+        .form-field label {
+            display: block;
+            font-weight: 500;
+            margin-bottom: 0.25rem;
+            color: #333;
+        }
+        .form-field .field-line {
+            border-bottom: 1px solid #ccc;
+            height: 1.5rem;
+        }
+        .checkbox-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        .checkbox-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .checkbox-item input[type="checkbox"] {
+            width: 18px;
+            height: 18px;
+            accent-color: #136BB8;
+        }
+        .info-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+        .info-table th,
+        .info-table td {
+            border: 1px solid #ddd;
+            padding: 0.75rem;
+            text-align: left;
+        }
+        .info-table th {
+            background: #f5f5f5;
+            font-weight: 500;
+            color: #136BB8;
+        }
+        .info-table td {
+            min-height: 2rem;
+        }
+        .intro-text {
+            font-size: 1.1rem;
+            max-width: 800px;
+            margin: 0 auto 2rem;
+            text-align: center;
+        }
+        .section-title {
+            text-align: center;
+            color: #136BB8;
+            margin-bottom: 1rem;
+        }
+        .content-section {
+            padding: 3rem 20px;
+            background: #f9f9f9;
+        }
+        .remember-list {
+            background: #e8f4fc;
+            border-radius: 10px;
+            padding: 1.5rem 2rem;
+            margin-top: 2rem;
+        }
+        .remember-list h4 {
+            color: #136BB8;
+            margin-bottom: 1rem;
+        }
+        .remember-list ul {
+            margin: 0;
+            padding-left: 1.5rem;
+        }
+        .remember-list li {
+            margin-bottom: 0.5rem;
+        }
+        .remember-list ul ul {
+            margin-top: 0.5rem;
+        }
+        .download-cta {
+            text-align: center;
+            padding: 2rem;
+            background: #fff;
+            border-radius: 10px;
+            margin-top: 2rem;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .download-cta p {
+            margin-bottom: 1rem;
+        }
+        .notes-area {
+            width: 100%;
+            min-height: 150px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-top: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header/Navigation -->
+    <header>
+        <nav aria-label="Main navigation">
+            <div class="container">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="Patient Path NYC Logo">
+                    </a>
+                </div>
+                <ul class="nav-menu" role="list">
+                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+                <button class="mobile-menu-toggle" aria-label="Toggle menu">☰</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Skip Navigation -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <main id="main-content">
+    <!-- Hero Section -->
+    <section class="hero faq-hero">
+        <div class="hero-content">
+            <h1>Medical History Form</h1>
+            <p>Prepare for your hospital stay by organizing your medical history and contact information. Download the printable PDF form to fill out and bring with you.</p>
+            <a href="files/preparingForHospitalStay.pdf" class="cta-button">Download PDF</a>
+        </div>
+        <div class="hero-image">
+            <img src="images/service1.jpg" alt="Medical history preparation">
+        </div>
+    </section>
+
+    <!-- Form Content Section -->
+    <section class="content-section" aria-labelledby="form-heading">
+        <div class="container">
+            <h2 id="form-heading" class="section-title">What to Include in Your Medical History</h2>
+            <p class="intro-text">Having this information organized and ready can help ensure you receive the best possible care.</p>
+
+            <!-- Patient Information -->
+            <div class="form-section">
+                <h3>Patient Information</h3>
+                <div class="form-grid">
+                    <div class="form-field">
+                        <label>Full Name</label>
+                        <div class="field-line"></div>
+                    </div>
+                    <div class="form-field">
+                        <label>Date of Birth</label>
+                        <div class="field-line"></div>
+                    </div>
+                    <div class="form-field">
+                        <label>Gender Identity</label>
+                        <div class="field-line"></div>
+                    </div>
+                    <div class="form-field">
+                        <label>Phone Number</label>
+                        <div class="field-line"></div>
+                    </div>
+                    <div class="form-field">
+                        <label>Email Address</label>
+                        <div class="field-line"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Primary Care Physician & Advanced Directives -->
+            <div class="form-section">
+                <h3>Primary Care Physician & Advanced Directives</h3>
+                <div class="form-grid">
+                    <div>
+                        <div class="form-field">
+                            <label>Physician Name</label>
+                            <div class="field-line"></div>
+                        </div>
+                        <div class="form-field">
+                            <label>Phone Number</label>
+                            <div class="field-line"></div>
+                        </div>
+                        <div class="form-field">
+                            <label>Email</label>
+                            <div class="field-line"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <label style="font-weight: 500; margin-bottom: 1rem; display: block;">Advanced Directives (check all that apply)</label>
+                        <div class="checkbox-group">
+                            <label class="checkbox-item">
+                                <input type="checkbox"> Health Care Proxy
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox"> HIPAA Release
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox"> Power of Attorney
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox"> DNR
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox"> DNI
+                            </label>
+                            <label class="checkbox-item">
+                                <input type="checkbox"> MOLST
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Medications -->
+            <div class="form-section">
+                <h3>Medications</h3>
+                <p>List all medications and supplements. Tip: Mark all medications prescribed by the same provider in one color.</p>
+                <table class="info-table">
+                    <thead>
+                        <tr>
+                            <th>Medication / Supplement</th>
+                            <th>Dosage</th>
+                            <th>Frequency</th>
+                            <th>Purpose</th>
+                            <th>Special Instructions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>&nbsp;</td><td></td><td></td><td></td><td></td></tr>
+                        <tr><td>&nbsp;</td><td></td><td></td><td></td><td></td></tr>
+                        <tr><td>&nbsp;</td><td></td><td></td><td></td><td></td></tr>
+                        <tr><td>&nbsp;</td><td></td><td></td><td></td><td></td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Specialists -->
+            <div class="form-section">
+                <h3>Current Treating Specialists</h3>
+                <table class="info-table">
+                    <thead>
+                        <tr>
+                            <th>Specialty</th>
+                            <th>Provider Name</th>
+                            <th>Phone Number</th>
+                            <th>Email</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>&nbsp;</td><td></td><td></td><td></td></tr>
+                        <tr><td>&nbsp;</td><td></td><td></td><td></td></tr>
+                        <tr><td>&nbsp;</td><td></td><td></td><td></td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Medical Conditions -->
+            <div class="form-section">
+                <h3>Medical Conditions and Diagnoses</h3>
+                <table class="info-table">
+                    <thead>
+                        <tr>
+                            <th>Medical Condition / Treatment / Diagnosis</th>
+                            <th>Year</th>
+                            <th>Resolved or Ongoing</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>&nbsp;</td><td></td><td></td></tr>
+                        <tr><td>&nbsp;</td><td></td><td></td></tr>
+                        <tr><td>&nbsp;</td><td></td><td></td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Allergies -->
+            <div class="form-section">
+                <h3>Allergies</h3>
+                <p>List any known allergies, including drug, food, or environmental allergies.</p>
+                <table class="info-table">
+                    <thead>
+                        <tr>
+                            <th>Allergy</th>
+                            <th>Reaction</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>&nbsp;</td><td></td></tr>
+                        <tr><td>&nbsp;</td><td></td></tr>
+                        <tr><td>&nbsp;</td><td></td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Surgeries -->
+            <div class="form-section">
+                <h3>Surgeries</h3>
+                <table class="info-table">
+                    <thead>
+                        <tr>
+                            <th>Surgery</th>
+                            <th>Reason</th>
+                            <th>Year</th>
+                            <th>Hospital</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>&nbsp;</td><td></td><td></td><td></td></tr>
+                        <tr><td>&nbsp;</td><td></td><td></td><td></td></tr>
+                        <tr><td>&nbsp;</td><td></td><td></td><td></td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Insurance -->
+            <div class="form-section">
+                <h3>Health Insurance Information</h3>
+                <div class="form-grid">
+                    <div class="form-field">
+                        <label>Insurance Provider</label>
+                        <div class="field-line"></div>
+                    </div>
+                    <div class="form-field">
+                        <label>Policy Number</label>
+                        <div class="field-line"></div>
+                    </div>
+                    <div class="form-field">
+                        <label>Group Number</label>
+                        <div class="field-line"></div>
+                    </div>
+                    <div class="form-field">
+                        <label>Primary Insurance Holder's Name</label>
+                        <div class="field-line"></div>
+                    </div>
+                    <div class="form-field">
+                        <label>Primary Insurance Holder's Date of Birth</label>
+                        <div class="field-line"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Emergency Contacts -->
+            <div class="form-section">
+                <h3>Contact Information for Daily Communication</h3>
+                <p>List individuals you wish to be communicated with regarding your care. First contact will be primary contact.</p>
+                <table class="info-table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Relationship</th>
+                            <th>Phone Number</th>
+                            <th>Email Address</th>
+                            <th>Preferred Contact</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>&nbsp;</td><td></td><td></td><td></td><td></td></tr>
+                        <tr><td>&nbsp;</td><td></td><td></td><td></td><td></td></tr>
+                        <tr><td>&nbsp;</td><td></td><td></td><td></td><td></td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Remember to bring -->
+            <div class="remember-list">
+                <h4>Remember to bring copies of:</h4>
+                <ul>
+                    <li>ID Card</li>
+                    <li>Insurance Card</li>
+                    <li>Vaccination record</li>
+                    <li>Advanced Directives
+                        <ul>
+                            <li>Living Will</li>
+                            <li>Health Care Proxy Form</li>
+                            <li>DNR order</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Download CTA -->
+            <div class="download-cta">
+                <p>Download the printable PDF form to fill out by hand. For an editable version, contact us.</p>
+                <a href="files/preparingForHospitalStay.pdf" class="cta-button">Download PDF</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="faq-cta">
+                <h2>Need More Help?</h2>
+                <p>Contact us for a <u>free</u> 20-minute initial consultation</p>
+                <a href="index.html#contact" class="cta-button">Contact Us</a>
+            </div>
+        </div>
+    </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-logo">
+                <img src="images/logo.png" alt="Patient Path NYC Logo">
+            </div>
+            <div class="footer-content">
+                <p>&copy; 2025 Patient Path NYC. All rights reserved. Privacy Policy - SMS: No mobile information will be shared with third parties/affiliates for marketing/promotional purposes. All the above categories exclude text messaging originator opt-in data and consent; this information will not be shared with any third parties.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
