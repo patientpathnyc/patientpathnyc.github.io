@@ -302,12 +302,10 @@
                 <div class="logo">
                     <a href="index.html">
                         <img src="images/logo.png" alt="Patient Path NYC Logo">
-                        <span class="wordmark">Patient Path NYC</span>
                     </a>
                 </div>
                 <ul class="nav-menu" role="list">
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#about">About</a></li>
+                    <li><a href="about.html">About</a></li>
                     <li><a href="faq.html">FAQ</a></li>
                     <li><a href="resources.html">Resources</a></li>
                     <li><a href="#contact">Contact</a></li>
@@ -321,54 +319,91 @@
     <a href="#main-content" class="skip-link">Skip to main content</a>
 
     <main id="main-content">
-    <!-- Hero Section -->
+    <!-- Hero — Shlomit-first -->
     <section id="home" class="hero">
-        <div class="hero-content">
-            <h1>Patient Advocacy</h1>
-            <p>
-                When you or your loved one is hospitalized in New York, we're here to help.<br>
-                We help you make your plan, manage your care, and start your recovery.
-            </p>
-            <a href="#contact" class="cta-button">Contact Us</a>
-        </div>
-        <div class="hero-image">
-            <img src="images/hero_small.jpg" alt="Patient advocacy services">
+        <div class="container hero-grid">
+            <div class="hero-portrait">
+                <img src="images/shlomit.jpg" alt="Shlomit Liberty, Board Certified Patient Advocate">
+            </div>
+            <div class="hero-content">
+                <h1>Shlomit Liberty</h1>
+                <p class="eyebrow">Medical Crisis Manager and Patiant Advocate</p>
+                <p>
+                  I help families navigate complex hospital recovery, rehabilitation, and safe discharge. 
+                </p>
+                <p class="hero-credential">MS, MA, CCC-SLP, BCPA &nbsp;·&nbsp; A decade at NYP, Stanford &amp; Weill Cornell &nbsp;·&nbsp; Based in New York City</p>
+                <div class="hero-ctas">
+                    <a href="#contact" class="btn btn-primary">Schedule a free 20-min consult</a>
+                    <a href="about.html" class="btn btn-ghost">Read Shlomit's story</a>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- Services Section -->
+    <!-- Trust strip -->
+    <section class="trust-strip" aria-label="Clinical experience and professional affiliations">
+        <div class="container">
+            <p class="eyebrow section-eyebrow">Clinical experience and professional affiliations</p>
+        </div>
+        <div class="trust-marquee">
+            <div class="trust-track">
+                <div class="trust-logo"><img src="images/hospital-nyp.png" alt="New York Presbyterian"></div>
+                <div class="trust-logo"><img src="images/hospital-wcm.png" alt="Weill Cornell Medical Center"></div>
+                <div class="trust-logo"><img src="images/hospital-stanford.png" alt="Stanford University Hospital"></div>
+                <div class="trust-logo"><img src="images/hospital-rmc.png" alt="San Jose Regional Medical Center"></div>
+                <div class="trust-logo"><img src="images/affiliation-pabc.png" alt="Patient Advocacy Board Certification (PABC)"></div>
+                <div class="trust-logo"><img src="images/affiliation-nahac.png" alt="NAHAC"></div>
+                <div class="trust-logo"><img src="images/affiliation-healthadvocatex.png" alt="HealthAdvocateX"></div>
+                <div class="trust-logo"><img src="images/affiliation-pulse.png" alt="Pulse Center for Patient Safety"></div>
+                <div class="trust-logo"><img src="images/affiliation-circle.png" alt="The Circle"></div>
+                <div class="trust-logo"><img src="images/affiliation-gna.png" alt="Global Nurses Association (GNA)"></div>
+                <!-- Duplicated for seamless loop; hidden from screen readers -->
+                <div class="trust-logo" aria-hidden="true"><img src="images/hospital-nyp.png" alt=""></div>
+                <div class="trust-logo" aria-hidden="true"><img src="images/hospital-wcm.png" alt=""></div>
+                <div class="trust-logo" aria-hidden="true"><img src="images/hospital-stanford.png" alt=""></div>
+                <div class="trust-logo" aria-hidden="true"><img src="images/hospital-rmc.png" alt=""></div>
+                <div class="trust-logo" aria-hidden="true"><img src="images/affiliation-pabc.png" alt=""></div>
+                <div class="trust-logo" aria-hidden="true"><img src="images/affiliation-nahac.png" alt=""></div>
+                <div class="trust-logo" aria-hidden="true"><img src="images/affiliation-healthadvocatex.png" alt=""></div>
+                <div class="trust-logo" aria-hidden="true"><img src="images/affiliation-pulse.png" alt=""></div>
+                <div class="trust-logo" aria-hidden="true"><img src="images/affiliation-circle.png" alt=""></div>
+                <div class="trust-logo" aria-hidden="true"><img src="images/affiliation-gna.png" alt=""></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
     <section id="services" class="services" aria-labelledby="services-heading">
         <div class="container">
-            <h2 id="services-heading" class="visually-hidden">Our Services</h2>
+            <p class="eyebrow section-eyebrow">What I do for you and your family</p>
             <div class="services-grid">
                 <article class="service-card">
                     <h3>Getting started</h3>
                     <ul>
-                        <li>We begin with a free 20-minute intake meeting where we answer your questions and explain our process and services.</li>
-                        <li>We start with an in-depth review of your medical history and current status.</li>
-                        <li>We work with you and your family to understand your options and wishes.</li>
-                        <li>We help communicate your choices to your team.</li>
+                        <li>A free 20-minute intake to answer questions and explain my services</li>
+                        <li>Review your medical history and current status.</li>
+                        <li>Understand your options and wishes.</li>
+                        <li>Communicate your choices to your medical team.</li>
                     </ul>
                     <img src="images/service1.jpg" alt="Understand your status">
-
                 </article>
                 <article class="service-card">
                     <h3>At the hospital</h3>
                     <ul>
-                        <li>We continuously track your medical status with daily medical chart reviews and team communication.</li>
-                        <li>We make sure your treatment plans are being followed.</li>
-                        <li>We visit you in person at the hospital as needed and communicate with your team.</li>
-                        <li>We attend family meetings and help resolve conflicts when those arise.</li>
+                        <li>In person hospital presence as needed.</li>
+                        <li>Daily medical chart review and team communicatzion.</li>
+                        <li>Treatment plan and status tracking.</li>
+                        <li>Family meeting attendence and conflict resolution.</li>
                     </ul>
                     <img src="images/service2.jpg" alt="Communicate your needs">
                 </article>
                 <article class="service-card">
                     <h3>Before discharge</h3>
                     <ul>
-                        <li>We ensure your discharge plan is safe and aligned with your goals.</li>
-                        <li>We research and advise on next steps - at home or in a facility.</li>
-                        <li>We connect you with our network of specialists to support your recovery.</li>
-                        <li>We stay actively involved until you safely transition to the next level of care with the services you need.</li>
+                        <li>Confirm discharge plan is safe and aligned with your goals.</li>
+                        <li>Research and advise on next steps — at home or in a facility.</li>
+                        <li>Connect with my network of specialists.</li>
+                        <li>Safe transition to the next level of care.</li>
                     </ul>
                     <img src="images/service3.jpg" alt="Plan your recovery">
                 </article>
@@ -376,123 +411,109 @@
         </div>
     </section>
 
-
-    <!-- About Section -->
-    <section id="about" class="about" aria-labelledby="about-heading">
+    <!-- Conditions & specialties -->
+    <section class="conditions" aria-labelledby="conditions-heading">
         <div class="container">
-            <h2 id="about-heading" class="visually-hidden">About</h2>
-            <div class="about-grid">
-                <div class="about-card">
-                    <h3>Shlomit Liberty</h3>
-                    <p><strong>MS, MA, CCC-SLP, BCPA</strong></p>
-                    <img src="images/shlomit.jpg" alt="Shlomit - Patient Advocate">
+            <p class="eyebrow section-eyebrow">Specilizations and clinical experience</p>
+            
+            <p class="conditions-intro">Drawn from a decade at the bedside, in emergency departments, ICUs, step-downs, and rehabilitation.</p>
+            <div class="conditions-grid">
+                <div class="condition-group">
+                    <h4>Neurological</h4>
+                    <ul>
+                        <li>Stroke / CVA</li>
+                        <li>Traumatic brain injury (TBI)</li>
+                        <li>Brain tumor, resection, craniotomy</li>
+                        <li>Guillain-Barré, Myasthenia Gravis</li>
+                        <li>Aphasia, agraphia, alexia</li>
+                        <li>Cognitive-communication deficits</li>
+                    </ul>
                 </div>
-
-                <div class="about-card">
-                    <h3>About</h3>
-                    <p>
-                        Board-certified Independent Patient Advocate specializing in complex medical conditions, personal medical crisis management, and care navigation. 
-                    </p>
-                    <p>
-                        Medical Speech-Language Pathologist (NYU, Clinical Master's Degree) with more than a decade of healthcare experience at San Jose Regional Medical Center, Stanford University Hospital, and New York Presbyterian Weill Cornell Medical Center.
-                    </p>
-                    <p>
-                        Public speaker and trainer on topics related to advocacy during hospital stays and clinical topics in the field of Speech-Language Pathology (swallowing, language, and cognition).
-                    </p>
-                    <p>
-                        New York based wife and mother of three (and a dog). Passionate about supporting others with empathy, kindness, and attention to detail.
-                    </p>
+                <div class="condition-group">
+                    <h4>Neurodegenerative</h4>
+                    <ul>
+                        <li>Dementia, Alzheimer's disease</li>
+                        <li>Parkinson's disease</li>
+                        <li>Multiple Sclerosis</li>
+                    </ul>
                 </div>
-                
-                <div class="about-card">
-                    <h3>Clinical Experience</h3>
-                    <div class="experience-logos">
-                        <div class="experience-logo-item">
-                            <img src="images/hospital-nyp.png" alt="New York Presbyterian">
-                        </div>
-                        <div class="experience-logo-item">
-                            <img src="images/hospital-wcm.png" alt="Weill Cornell Medical Center">
-                        </div>
-                        <div class="experience-logo-item">
-                            <img src="images/hospital-stanford.png" alt="Stanford University Hospital">
-                        </div>
-                        <div class="experience-logo-item">
-                            <img src="images/hospital-rmc.png" alt="San Jose Regional Hospital (RMC)">
-                        </div>
-                    </div>
-                    <p><strong>Professional Affiliations</strong></p>
-                    <div class="card-logos">
-                        <div class="logo-item">
-                            <img src="images/affiliation-pabc.png" alt="Patient Advocacy Board Certification (PABC)">
-                        </div>
-                        <div class="logo-item">
-                            <img src="images/affiliation-gna.png" alt="Global Nurses Association (GNA)">
-                        </div>
-                        <div class="logo-item">
-                            <img src="images/affiliation-healthadvocatex.png" alt="HealthAdvocateX">
-                        </div>
-                        <div class="logo-item">
-                            <img src="images/affiliation-pulse.png" alt="Pulse">
-                        </div>
-                        <div class="logo-item">
-                            <img src="images/affiliation-circle.png" alt="The Circle">
-                        </div>
-                        <div class="logo-item">
-                            <img src="images/affiliation-nahac.png" alt="Nahac">
-                        </div>
-                    </div>
+                <div class="condition-group">
+                    <h4>Cardio-thoracic &amp; respiratory</h4>
+                    <ul>
+                        <li>Acute respiratory failure (intubation, tracheostomy, ventilation)</li>
+                        <li>COPD</li>
+                        <li>AAA repair, CABG</li>
+                        <li>Organ transplant (lungs, heart, liver)</li>
+                    </ul>
+                </div>
+                <div class="condition-group">
+                    <h4>Swallowing &amp; airway</h4>
+                    <ul>
+                        <li>Dysphagia, swallowing impairment</li>
+                        <li>Vocal fold paralysis / paresis, glottic insufficiency</li>
+                        <li>Feeding tubes (NG, PEG)</li>
+                        <li>Esophageal cancer, esophagectomy, Zenker's diverticulum</li>
+                    </ul>
+                </div>
+                <div class="condition-group">
+                    <h4>Spine &amp; surgical</h4>
+                    <ul>
+                        <li>Anterior Cervical Discectomy &amp; Fusion (ACDF)</li>
+                        <li>Post-surgical inpatient recovery</li>
+                    </ul>
+                </div>
+                <div class="condition-group">
+                    <h4>End of life</h4>
+                    <ul>
+                        <li>End-stage liver disease</li>
+                        <li>End-of-life care planning &amp; coordination</li>
+                    </ul>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- Speaking / for medical professionals -->
+    <section class="speaking" aria-labelledby="speaking-heading">
+        <div class="container">
+            <p class="eyebrow section-eyebrow">For medical professionals</p>
+            <h2 id="speaking-heading">Speaking &amp; clinical education</h2>
+            <p>I offer evidence-based talks on patient advocacy, navigating hospitalization, dysphagia, and cognitive-communication disorders for clinicians and community groups. Past audiences include <strong>Pulse Center for Patient Safety</strong>, <strong>HealthAdvocateX</strong>, <strong>NEPAC</strong>, <strong>Sunrise Senior Living</strong>, the <strong>Brain Injury Association of America</strong>, and <strong>JCC Manhattan</strong>.</p>
+            <a href="#contact" class="btn btn-ghost">Inquire about a talk</a>
         </div>
     </section>
 
     <!-- Contact Section -->
 
     <section id="contact" class="contact" aria-labelledby="contact-heading">
-        <h2 id="contact-heading" class="visually-hidden">Contact Us</h2>
         <div class="container">
-            <div class="about-grid">
-                <div class="about-card">
-                    <h3>Contact us</h3>
-                    <p>
-                        To schedule a <u>free</u> 20-minute initial consultation or to inquire about our services, please send us a message. 
-                    </p>
-                    <form class="contact-form" id="contactForm" action="https://formsubmit.co/shlomit@patientpathnyc.com" method="POST" aria-label="Contact form">
-                        <div class="form-group">
-                            <label for="name">Name <span aria-label="required">*</span></label>
-                            <input type="text" id="name" name="name" required aria-required="true">
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email <span aria-label="required">*</span></label>
-                            <input type="email" id="email" name="email" required aria-required="true">
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Message <span aria-label="required">*</span></label>
-                            <textarea id="message" name="message" rows="5" required aria-required="true"></textarea>
-                        </div>
-                        <!-- Formsubmit.co Configuration -->
-                        <input type="hidden" name="_subject" value="Patient Path NYC - Contact Form">
-                        <input type="hidden" name="_captcha" value="false">
-                        <input type="hidden" name="_template" value="table">
-                        <input type="hidden" name="_next" value="https://patientpathnyc.com/thank-you.html">
-                        <input type="text" name="_honey" style="display:none">
-                        <button type="submit" class="submit-button">Send Message</button>
-                    </form>
+            <p class="eyebrow section-eyebrow">Contact</p>
+            <p class="contact-intro">To schedule a free 20-minute initial consultation or inquire about services, send a message below.</p>
+            <form class="contact-form" id="contactForm" action="https://formsubmit.co/shlomit@patientpathnyc.com" method="POST" aria-label="Contact form">
+                <div class="form-group">
+                    <label for="name">Name <span aria-label="required">*</span></label>
+                    <input type="text" id="name" name="name" required aria-required="true">
                 </div>
-                <div class="about-card">
-                    <h3>Urgent help</h3>
-                    <div class="contact-info">
-                        <p>
-                            If you need help <strong>urgently</strong> please text, call, or email us directly.
-                        </p>
-                        <address>
-                            <p><strong>Phone:</strong> <a href="tel:9172832765">(917) 283-2765</a>
-                                <strong>Email:</strong> <a href="mailto:shlomit@patientpathnyc.com">Shlomit@PatientPathNYC.com</a></p>
-                        </address>
-                    </div>
+                <div class="form-group">
+                    <label for="email">Email <span aria-label="required">*</span></label>
+                    <input type="email" id="email" name="email" required aria-required="true">
                 </div>
-                
-            </div>
+                <div class="form-group">
+                    <label for="message">Message <span aria-label="required">*</span></label>
+                    <textarea id="message" name="message" rows="5" required aria-required="true"></textarea>
+                </div>
+                <!-- Formsubmit.co Configuration -->
+                <input type="hidden" name="_subject" value="Patient Path NYC - Contact Form">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_next" value="https://patientpathnyc.com/thank-you.html">
+                <input type="text" name="_honey" style="display:none">
+                <button type="submit" class="submit-button">Send Message</button>
+            </form>
+            <p class="contact-direct">
+                Need help <strong>urgently</strong>? Text, call, or email directly:
+                <a href="tel:9172832765">(917) 283-2765</a> &nbsp;·&nbsp; <a href="mailto:shlomit@patientpathnyc.com">Shlomit@PatientPathNYC.com</a>
+            </p>
         </div>
     </section>
     </main>
@@ -515,8 +536,7 @@
                 <div class="footer-col">
                     <h4>Explore</h4>
                     <ul role="list">
-                        <li><a href="index.html#services">Services</a></li>
-                        <li><a href="index.html#about">About</a></li>
+                            <li><a href="about.html">About</a></li>
                         <li><a href="faq.html">FAQ</a></li>
                         <li><a href="resources.html">Resources</a></li>
                         <li><a href="index.html#contact">Contact</a></li>
