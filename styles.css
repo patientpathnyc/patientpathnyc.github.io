@@ -1767,7 +1767,7 @@ footer .container {
    Resources index (flat editorial grid)
    -------------------------------------------------------------------------- */
 .resources-index {
-    background: var(--paper);
+    background: var(--cream);
     padding: var(--section-y) 1.5rem;
 }
 
