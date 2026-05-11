@@ -57,4 +57,38 @@ document.addEventListener('DOMContentLoaded', function() {
             console.log('Contact Form Subject Line Debug:', subjectField.value);
         }
     }
+
+    // Testimonials carousel — advance/rewind one card per click, wrap around.
+    const viewport = document.querySelector('.testimonials-viewport');
+    const prevBtn = document.querySelector('.testimonials-prev');
+    const nextBtn = document.querySelector('.testimonials-next');
+    if (viewport && prevBtn && nextBtn) {
+        const card = viewport.querySelector('.testimonial');
+        const track = viewport.querySelector('.testimonials-track');
+
+        function stepWidth() {
+            if (!card || !track) return viewport.clientWidth;
+            const gap = parseFloat(getComputedStyle(track).gap) || 0;
+            return card.getBoundingClientRect().width + gap;
+        }
+
+        function step(direction) {
+            const max = viewport.scrollWidth - viewport.clientWidth;
+            const current = viewport.scrollLeft;
+            let target = current + direction * stepWidth();
+            // Wrap around.
+            if (direction > 0 && current >= max - 4) target = 0;
+            else if (direction < 0 && current <= 4) target = max;
+            viewport.scrollTo({ left: target, behavior: 'smooth' });
+        }
+
+        prevBtn.addEventListener('click', () => step(-1));
+        nextBtn.addEventListener('click', () => step(1));
+
+        // Keyboard support when focus is inside the carousel region.
+        viewport.parentElement.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowLeft') { e.preventDefault(); step(-1); }
+            else if (e.key === 'ArrowRight') { e.preventDefault(); step(1); }
+        });
+    }
 });
