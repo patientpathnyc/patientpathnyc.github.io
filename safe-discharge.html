@@ -14,200 +14,63 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
-    <meta name="description" content="Guide to preparing for a safe hospital discharge - understand your options for next level of care and what to ask before leaving.">
+    <meta name="description" content="Guide to preparing for a safe hospital discharge — understand the levels of care after discharge, what to ask before leaving, and the CUS Tool for self-advocacy.">
     <meta name="keywords" content="hospital discharge, discharge planning, patient advocacy, rehabilitation options, NYC patient care">
     <meta name="author" content="Shlomit Liberty, Patient Path NYC">
-    <meta property="og:title" content="How to Prepare for a Safe Discharge - Patient Path NYC">
+    <meta property="og:title" content="How to Prepare for a Safe Discharge — Patient Path NYC">
     <meta property="og:description" content="A safe and well-planned discharge can help prevent complications and avoid unnecessary readmission.">
-    <meta property="og:type" content="website">
+    <meta property="og:type" content="article">
     <meta property="og:url" content="https://www.patientpathnyc.com/safe-discharge.html">
-    <title>How to Prepare for a Safe Discharge - Patient Path NYC</title>
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="How to Prepare for a Safe Discharge — Patient Path NYC">
+    <meta name="twitter:description" content="A safe and well-planned discharge can help prevent complications and avoid unnecessary readmission.">
+    <meta name="twitter:image" content="https://www.patientpathnyc.com/images/logo.png">
+    <title>How to Prepare for a Safe Discharge — Patient Path NYC</title>
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <link rel="canonical" href="https://www.patientpathnyc.com/safe-discharge.html">
     <link rel="stylesheet" href="styles.css">
-    <style>
-        .stats-banner {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 1.5rem;
-            margin: 2rem 0;
+
+    <!-- Structured Data: Article -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "How to Prepare for a Safe Discharge",
+      "description": "Understand the levels of care after a hospital stay, what to ask before discharge, and how to advocate for a safe transition using the CUS Tool.",
+      "image": "https://www.patientpathnyc.com/images/logo.png",
+      "datePublished": "2025-01-05",
+      "dateModified": "2026-05-11",
+      "author": {
+        "@type": "Person",
+        "name": "Shlomit Liberty",
+        "url": "https://www.patientpathnyc.com/about.html"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Patient Path NYC",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.patientpathnyc.com/images/logo.png"
         }
-        .stat-box {
-            background: #e8f4fc;
-            border-radius: 10px;
-            padding: 1.5rem;
-            text-align: center;
-        }
-        .stat-box.warning {
-            background: #fff3cd;
-        }
-        .stat-box p {
-            margin: 0;
-            line-height: 1.5;
-        }
-        .stat-box strong {
-            color: #136BB8;
-        }
-        .care-levels-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 1.5rem;
-            margin-top: 2rem;
-        }
-        .care-card {
-            background: #fff;
-            border-radius: 10px;
-            padding: 1.5rem;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s;
-            border-left: 4px solid #136BB8;
-        }
-        .care-card:hover {
-            transform: translateY(-3px);
-        }
-        .care-card h3 {
-            color: #136BB8;
-            margin-bottom: 0.75rem;
-            font-size: 1.1rem;
-        }
-        .care-card p {
-            margin: 0;
-            font-size: 0.95rem;
-            line-height: 1.5;
-        }
-        .checklist-section {
-            background: #fff;
-            border-radius: 10px;
-            padding: 2rem;
-            margin-top: 2rem;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        }
-        .checklist-section h3 {
-            color: #136BB8;
-            margin-bottom: 1rem;
-        }
-        .checklist-section ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-        .checklist-section li {
-            padding: 0.6rem 0;
-            padding-left: 2rem;
-            position: relative;
-            border-bottom: 1px solid #f0f0f0;
-        }
-        .checklist-section li:last-child {
-            border-bottom: none;
-        }
-        .checklist-section li::before {
-            content: "";
-            position: absolute;
-            left: 0;
-            top: 0.75rem;
-            width: 14px;
-            height: 14px;
-            border: 2px solid #136BB8;
-            border-radius: 3px;
-        }
-        .questions-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin-top: 2rem;
-        }
-        .questions-card {
-            background: #fff;
-            border-radius: 10px;
-            padding: 1.5rem;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        }
-        .questions-card h4 {
-            color: #136BB8;
-            margin-bottom: 1rem;
-            font-size: 1.1rem;
-        }
-        .questions-card ul {
-            list-style: disc;
-            padding-left: 1.25rem;
-            margin-bottom: 1rem;
-        }
-        .questions-card li {
-            margin-bottom: 0.5rem;
-        }
-        .important-note {
-            background: #fff3cd;
-            border-radius: 5px;
-            padding: 1rem;
-            font-size: 0.9rem;
-        }
-        .important-note strong {
-            color: #856404;
-        }
-        .cus-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 1.5rem;
-            margin-top: 2rem;
-        }
-        .cus-card {
-            background: #fff;
-            border-radius: 10px;
-            padding: 1.5rem;
-            text-align: center;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        }
-        .cus-card .letter {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            width: 50px;
-            height: 50px;
-            background: #136BB8;
-            color: #fff;
-            border-radius: 50%;
-            font-size: 1.5rem;
-            font-weight: bold;
-            margin-bottom: 1rem;
-        }
-        .cus-card h4 {
-            color: #136BB8;
-            margin-bottom: 0.5rem;
-        }
-        .cus-card p {
-            font-style: italic;
-            color: #555;
-            margin: 0;
-            font-size: 0.95rem;
-        }
-        .intro-text {
-            font-size: 1.1rem;
-            max-width: 800px;
-            margin: 0 auto 2rem;
-            text-align: center;
-        }
-        .section-title {
-            text-align: center;
-            color: #136BB8;
-            margin-bottom: 1rem;
-        }
-        .content-section {
-            padding: 3rem 20px;
-            background: #fff;
-        }
-        .content-section:nth-child(even) {
-            background: #f9f9f9;
-        }
-        .download-section {
-            text-align: center;
-            padding: 2rem;
-            background: #fff;
-            border-radius: 10px;
-            margin-top: 2rem;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        }
-        .download-section p {
-            margin-bottom: 1rem;
-        }
-    </style>
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://www.patientpathnyc.com/safe-discharge.html"
+      }
+    }
+    </script>
+    <!-- Structured Data: BreadcrumbList -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.patientpathnyc.com/" },
+        { "@type": "ListItem", "position": 2, "name": "Resources", "item": "https://www.patientpathnyc.com/resources.html" },
+        { "@type": "ListItem", "position": 3, "name": "How to Prepare for a Safe Discharge", "item": "https://www.patientpathnyc.com/safe-discharge.html" }
+      ]
+    }
+    </script>
 </head>
 <body>
     <!-- Header/Navigation -->
@@ -220,8 +83,8 @@
                     </a>
                 </div>
                 <ul class="nav-menu" role="list">
-                    <li><a href="index.html#services">Services</a></li>
-                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
                     <li><a href="faq.html">FAQ</a></li>
                     <li><a href="resources.html">Resources</a></li>
                     <li><a href="index.html#contact">Contact</a></li>
@@ -235,155 +98,102 @@
     <a href="#main-content" class="skip-link">Skip to main content</a>
 
     <main id="main-content">
-    <!-- Hero Section -->
-    <section class="hero faq-hero">
-        <div class="hero-content">
+    <!-- Article header -->
+    <section class="article-header">
+        <div class="container">
+            <p class="article-breadcrumb">
+                <a href="index.html">Home</a>
+                <span class="article-breadcrumb-sep">/</span>
+                <a href="resources.html">Resources</a>
+                <span class="article-breadcrumb-sep">/</span>
+                <span>How to Prepare for a Safe Discharge</span>
+            </p>
             <h1>How to Prepare for a Safe Discharge</h1>
-            <p>Leaving the hospital is a major step in your recovery. A safe and well-planned discharge can help prevent complications and avoid unnecessary readmission.</p>
-            <a href="files/How-to-Prepare-for-a-Safe-Discharge.pdf" class="cta-button">Download PDF</a>
-        </div>
-        <div class="hero-image">
-            <img src="images/service1.jpg" alt="Hospital discharge planning">
-        </div>
-    </section>
-
-    <!-- Why It Matters Section -->
-    <section class="content-section" aria-labelledby="why-heading">
-        <div class="container">
-            <h2 id="why-heading" class="section-title">Why Discharge Planning Matters</h2>
-
-            <div class="stats-banner">
-                <div class="stat-box">
-                    <p><strong>20% of adults age 65 and older</strong> are readmitted within 30 days of discharge</p>
-                </div>
-                <div class="stat-box warning">
-                    <p>Unplanned readmissions can <strong>delay healing</strong> and <strong>increase stress</strong> for patients and families</p>
-                </div>
-            </div>
-
-            <p class="intro-text">Careful discharge planning helps ensure you receive the right care at the right time.</p>
+            <p class="article-dek">Leaving the hospital is a major step in your recovery. A safe and well-planned discharge can help prevent complications and avoid unnecessary readmission.</p>
+            <p class="article-byline">
+                By <a href="index.html"><strong>Shlomit Liberty</strong></a>
+                <span class="article-byline-sep">&middot;</span>
+                <span>3 min read</span>
+            </p>
         </div>
     </section>
 
-    <!-- Levels of Care Section -->
-    <section class="content-section" aria-labelledby="care-heading">
+    <!-- Article body -->
+    <section class="article-body">
         <div class="container">
-            <h2 id="care-heading" class="section-title">Possible Next Levels of Care</h2>
-            <p class="intro-text">Understanding your options helps you make informed decisions about your recovery path.</p>
+            <h2>Why discharge planning matters</h2>
+            <p>The day you leave the hospital is rarely the day you're fully healed. The plan you carry out the door &mdash; medications, follow-ups, equipment, who will help at home &mdash; determines whether the next two weeks feel like recovery or backslide. About one in five adults aged 65 and older is readmitted within thirty days of discharge, and most of those readmissions are avoidable.</p>
+            <p>Discharge isn't just paperwork. It's the handoff. Careful planning helps ensure you receive the right care at the right time, in the right setting.</p>
 
-            <div class="care-levels-grid">
-                <article class="care-card">
-                    <h3>Acute / Inpatient Rehabilitation</h3>
-                    <p>Intensive therapy 3 hours daily for patients who can tolerate and benefit from aggressive rehabilitation with 24/7 medical supervision.</p>
-                </article>
+            <h2>The next level of care</h2>
+            <p>Most patients move from acute care to one of several intermediate settings before going home. The choice between them matters more than people realize, and the labels are easy to confuse.</p>
+            <p><strong>Acute or inpatient rehabilitation</strong> is the most intensive option &mdash; about three hours of therapy daily, with 24/7 medical supervision. It is intended for patients who can tolerate aggressive rehab and benefit from it.</p>
+            <p><strong>Sub-acute rehabilitation</strong> is a step down: moderate therapy combined with skilled nursing care, for patients who need rehab but can't yet tolerate the intensive program.</p>
+            <p><strong>Long-term acute care hospitals (LTACHs)</strong> provide extended medical care for patients with serious conditions that still require ongoing hospital-level treatment and monitoring.</p>
+            <p><strong>Home with home health</strong> means returning home with visiting nurses and therapists who provide care in your environment. <strong>Home with outpatient therapy</strong> is similar, but you travel to a clinic for sessions, usually one or two times a week per discipline.</p>
+            <p>The right answer depends on how much therapy you can tolerate, how much support you have at home, and how stable you are medically. Push back if a choice feels rushed.</p>
 
-                <article class="care-card">
-                    <h3>Sub-acute Rehabilitation</h3>
-                    <p>Moderate therapy for patients needing rehabilitation but not able to tolerate intensive programs. Includes skilled nursing care.</p>
-                </article>
+            <blockquote class="pull-quote">
+                Discharge is where the most things fall through the cracks &mdash; meds get muddled, follow-ups slip, equipment doesn't arrive. The window to ask "what happens if this doesn't go as planned?" closes fast. Use it.
+            </blockquote>
 
-                <article class="care-card">
-                    <h3>Long-Term Acute Care Hospital (LTACH)</h3>
-                    <p>Extended medical care for patients with serious conditions requiring ongoing acute hospital-level treatment and monitoring.</p>
-                </article>
+            <h2>Before you walk out the door</h2>
+            <p>A few things need to be true before discharge, and your care team should be able to confirm each one cleanly. Don't accept hand-waving.</p>
 
-                <article class="care-card">
-                    <h3>Home with Home Health Services</h3>
-                    <p>Return home with visiting professionals providing therapy and nursing care in your home environment.</p>
-                </article>
-
-                <article class="care-card">
-                    <h3>Home with Outpatient Therapy</h3>
-                    <p>Return home with regular therapy at a clinic setting as needed, typically 1-2 times weekly per discipline.</p>
-                </article>
-            </div>
-        </div>
-    </section>
-
-    <!-- Before Discharge Section -->
-    <section class="content-section" aria-labelledby="before-heading">
-        <div class="container">
-            <h2 id="before-heading" class="section-title">Before Discharge</h2>
-
-            <div class="checklist-section">
-                <h3>Make sure that:</h3>
+            <div class="checklist">
+                <h3>Make sure that&hellip;</h3>
                 <ul>
-                    <li>You understand any changes to your medications and confirm prescriptions</li>
-                    <li>Your caregivers have completed training to safely support you</li>
-                    <li>Your follow-up appointments are scheduled</li>
-                    <li>Your recommended Durable Medical Equipment (e.g., walker, bedside commode) is ordered and arriving before discharge or to home as needed</li>
+                    <li>You understand any changes to your medications and have prescriptions in hand.</li>
+                    <li>Your caregivers have completed any training needed to safely support you.</li>
+                    <li>Your follow-up appointments are scheduled, not just "recommended."</li>
+                    <li>Any durable medical equipment you need (walker, bedside commode, oxygen, etc.) is ordered and will arrive in time.</li>
                 </ul>
             </div>
 
-            <div class="questions-grid">
-                <div class="questions-card">
-                    <h4>If discharging to a facility, ask:</h4>
-                    <ul>
-                        <li>What does a typical day look like (therapy intensity, nursing care, visitation)?</li>
-                        <li>How long can I expect to stay at this level of care?</li>
-                        <li>Which facilities are reputable and appropriate for my needs?</li>
-                    </ul>
-                    <div class="important-note">
-                        <strong>IMPORTANT:</strong> It is vital that you do your own research or reach out to others who can help as rehabilitation facilities vary in quality, scope of services, and areas of specialization.
-                    </div>
-                </div>
+            <p>If you're discharging to a facility, ask what a typical day looks like &mdash; therapy intensity, nursing coverage, visiting hours. Ask how long the team expects you to stay at this level of care. Ask which facilities are reputable for your particular needs; rehab facilities vary widely in quality and specialization, and not every team will volunteer that information.</p>
+            <p>If you're going home, ask whether you'll have enough support &mdash; safety comes first. Find out how often home health or outpatient therapy will actually be provided, and whether the agency offers the specialty care you require. Make sure you fully understand the level of supervision your PT, OT, or SLP is recommending, as well as the safety strategies and the home exercise program.</p>
 
-                <div class="questions-card">
-                    <h4>If discharging back home, ask:</h4>
-                    <ul>
-                        <li>Will I have enough support at home (SAFETY first)?</li>
-                        <li>How often will home health or outpatient therapy be provided?</li>
-                        <li>Does the home health agency offer the specialty care I require?</li>
-                    </ul>
-                    <div class="important-note">
-                        <strong>IMPORTANT:</strong> Make sure you fully understand the level of supervision your PT/OT/SLP are recommending as well as safety strategies and home exercise program.
-                    </div>
-                </div>
+            <h2>Speak up: the CUS tool</h2>
+            <p>If you have reservations about the discharge plan, name them out loud. Clinicians teach each other a three-word script for the moments when something feels wrong but the room is moving forward: <strong>Concerned</strong>, <strong>Uncomfortable</strong>, <strong>Safety</strong>.</p>
+            <p>"I am concerned about this." "I am uncomfortable discharging home without support." "I think this is a safety issue." Any of those phrases will get the team to pause. Use them.</p>
+        </div>
+    </section>
+
+    <!-- Download band -->
+    <section class="article-download" aria-labelledby="download-heading">
+        <div class="container">
+            <h2 id="download-heading">Take this with you.</h2>
+            <p>Download the printable PDF version of this guide.</p>
+            <a href="files/How-to-Prepare-for-a-Safe-Discharge.pdf" class="btn btn-primary">Download PDF</a>
+        </div>
+    </section>
+
+    <!-- Related guides -->
+    <section class="article-related" aria-labelledby="related-heading">
+        <div class="container">
+            <h2 id="related-heading">Related guides</h2>
+            <div class="article-related-grid">
+                <a class="article-related-card" href="navigating-hospital-stay.html">
+                    <h3>Navigating Your Hospital Stay</h3>
+                    <p>Communication, infection prevention, and advocacy while you're admitted.</p>
+                </a>
+                <a class="article-related-card" href="prevent-cognitive-decline.html">
+                    <h3>Prevent Cognitive Decline During Hospitalization</h3>
+                    <p>Strategies to protect memory, attention, and clarity during a hospital stay.</p>
+                </a>
+                <a class="article-related-card" href="medical-history-form.html">
+                    <h3>Medical History Form</h3>
+                    <p>Organize your medical history, medications, and contacts before admission.</p>
+                </a>
             </div>
         </div>
     </section>
 
-    <!-- CUS Tool Section -->
-    <section class="content-section" aria-labelledby="cus-heading">
+    <!-- Closing CTA -->
+    <section class="closing-cta" aria-label="Contact us">
         <div class="container">
-            <h2 id="cus-heading" class="section-title">Speak Up: The CUS Tool</h2>
-            <p class="intro-text">If you have reservations about the discharge plan, try the "CUS Tool" for self-advocacy:</p>
-
-            <div class="cus-grid">
-                <div class="cus-card">
-                    <div class="letter">C</div>
-                    <h4>Concerned</h4>
-                    <p>"I am concerned about this procedure"</p>
-                </div>
-
-                <div class="cus-card">
-                    <div class="letter">U</div>
-                    <h4>Uncomfortable</h4>
-                    <p>"I am uncomfortable discharging home without support"</p>
-                </div>
-
-                <div class="cus-card">
-                    <div class="letter">S</div>
-                    <h4>Safety</h4>
-                    <p>"I worry that this is a safety issue"</p>
-                </div>
-            </div>
-
-            <div class="download-section">
-                <p>Download this guide as a printable PDF to help you prepare for discharge.</p>
-                <a href="files/How-to-Prepare-for-a-Safe-Discharge.pdf" class="cta-button">Download PDF</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Call to Action -->
-    <section class="faq-section">
-        <div class="container">
-            <div class="faq-cta">
-                <h2>Need More Help?</h2>
-                <p>Contact us for a <u>free</u> 20-minute initial consultation</p>
-                <a href="index.html#contact" class="cta-button">Contact Us</a>
-            </div>
+            <h2>For case-specific questions, contact us.</h2>
+            <a href="index.html#contact" class="btn btn-primary">Contact us</a>
         </div>
     </section>
     </main>
@@ -391,11 +201,39 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            <div class="footer-logo">
-                <img src="images/logo.png" alt="Patient Path NYC Logo">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <img src="images/logo.png" alt="Patient Path NYC Logo">
+                        <span class="wordmark">Patient Path NYC</span>
+                    </div>
+                    <p>Patient advocacy for hospitalized New Yorkers and their families.</p>
+                    <address>
+                        <p><a href="tel:9172832765">(917) 283-2765</a><br>
+                        <a href="mailto:shlomit@patientpathnyc.com">Shlomit@PatientPathNYC.com</a></p>
+                    </address>
+                </div>
+                <div class="footer-col">
+                    <h4>Explore</h4>
+                    <ul role="list">
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Credentials</h4>
+                    <ul role="list">
+                        <li>MS, MA, CCC-SLP, BCPA</li>
+                        <li>Board Certified Patient Advocate</li>
+                        <li>Member, NAHAC &amp; HealthAdvocateX</li>
+                        <li>Based in New York City</li>
+                    </ul>
+                </div>
             </div>
-            <div class="footer-content">
-                <p>&copy; 2025 Patient Path NYC. All rights reserved. Privacy Policy - SMS: No mobile information will be shared with third parties/affiliates for marketing/promotional purposes. All the above categories exclude text messaging originator opt-in data and consent; this information will not be shared with any third parties.</p>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Patient Path NYC. All rights reserved. SMS: No mobile information will be shared with third parties or affiliates for marketing or promotional purposes.</p>
             </div>
         </div>
     </footer>

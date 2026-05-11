@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
-    <meta name="description" content="Thank you for contacting Patient Path NYC">
-    <title>Thank You - Patient Path NYC</title>
+    <meta name="robots" content="noindex,nofollow">
+    <meta name="description" content="Thank you for contacting Patient Path NYC.">
+    <title>Thank you — Patient Path NYC</title>
+    <link rel="icon" type="image/png" href="images/logo.png">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -18,8 +20,8 @@
                     </a>
                 </div>
                 <ul class="nav-menu" role="list">
-                    <li><a href="index.html#services">Services</a></li>
-                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
                     <li><a href="faq.html">FAQ</a></li>
                     <li><a href="resources.html">Resources</a></li>
                     <li><a href="index.html#contact">Contact</a></li>
@@ -29,33 +31,74 @@
         </nav>
     </header>
 
-    <!-- Skip Navigation -->
     <a href="#main-content" class="skip-link">Skip to main content</a>
 
     <main id="main-content">
-        <!-- Thank You Section -->
-        <section class="hero" style="min-height: 60vh; display: flex; align-items: center; justify-content: center;">
-            <div class="container" style="text-align: center; max-width: 800px;">
-                <h1>Thank You!</h1>
-                <p style="font-size: 1.2rem; margin: 2rem 0;">
-                    We've received your message and will get back to you as soon as possible.
-                </p>
-                <p style="font-size: 1rem; margin-bottom: 2rem;">
-                    If you need urgent assistance, please call or text us at <a href="tel:9172832765" style="color: #ffffff; text-decoration: underline;">(917) 283-2765</a>
-                </p>
-                <a href="index.html" class="cta-button">Return to Home</a>
+    <!-- Confirmation -->
+    <section class="page-hero">
+        <div class="container">
+            <h1>Thank you.</h1>
+            <p class="page-hero-dek">I've received your message and will be in touch shortly. If your situation is urgent, please call or text me directly at <a href="tel:9172832765">(917) 283-2765</a>.</p>
+        </div>
+    </section>
+
+    <!-- Suggested reading while you wait -->
+    <section class="article-related" aria-labelledby="suggested-heading">
+        <div class="container">
+            <h2 id="suggested-heading">A few things to read while you wait</h2>
+            <div class="article-related-grid">
+                <a class="article-related-card" href="navigating-hospital-stay.html">
+                    <h3>Navigating Your Hospital Stay</h3>
+                    <p>What to bring, how to communicate, and how to protect yourself in the hospital.</p>
+                </a>
+                <a class="article-related-card" href="safe-discharge.html">
+                    <h3>How to Prepare for a Safe Discharge</h3>
+                    <p>The levels of care after a stay, and how to advocate for a safe transition.</p>
+                </a>
+                <a class="article-related-card" href="about.html">
+                    <h3>Meet Shlomit</h3>
+                    <p>A medical professional turned patient advocate — founder of Patient Path NYC.</p>
+                </a>
             </div>
-        </section>
+        </div>
+    </section>
     </main>
 
-    <!-- Footer -->
     <footer>
         <div class="container">
-            <div class="footer-logo">
-                <img src="images/logo.png" alt="Patient Path NYC Logo">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <img src="images/logo.png" alt="Patient Path NYC Logo">
+                        <span class="wordmark">Patient Path NYC</span>
+                    </div>
+                    <p>Patient advocacy for hospitalized New Yorkers and their families.</p>
+                    <address>
+                        <p><a href="tel:9172832765">(917) 283-2765</a><br>
+                        <a href="mailto:shlomit@patientpathnyc.com">Shlomit@PatientPathNYC.com</a></p>
+                    </address>
+                </div>
+                <div class="footer-col">
+                    <h4>Explore</h4>
+                    <ul role="list">
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Credentials</h4>
+                    <ul role="list">
+                        <li>MS, MA, CCC-SLP, BCPA</li>
+                        <li>Board Certified Patient Advocate</li>
+                        <li>Member, NAHAC &amp; HealthAdvocateX</li>
+                        <li>Based in New York City</li>
+                    </ul>
+                </div>
             </div>
-            <div class="footer-content">
-                <p>&copy; 2025 Patient Path NYC. All rights reserved. Privacy Policy - SMS: No mobile information will be shared with third parties/affiliates for marketing/promotional purposes. All the above categories exclude text messaging originator opt-in data and consent; this information will not be shared with any third parties.</p>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Patient Path NYC. All rights reserved. SMS: No mobile information will be shared with third parties or affiliates for marketing or promotional purposes.</p>
             </div>
         </div>
     </footer>
