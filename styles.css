@@ -355,6 +355,8 @@ nav .container {
     aspect-ratio: 4 / 5;
     box-shadow: var(--shadow-soft);
     background: rgba(255, 255, 255, 0.04);
+    max-width: 360px;
+    justify-self: center;
 }
 
 .hero-portrait img {
@@ -1092,6 +1094,7 @@ footer .container {
 
 .story-portrait img {
     width: 100%;
+    max-width: 300px;
     border-radius: var(--radius-lg);
     box-shadow: var(--shadow-soft);
 }
