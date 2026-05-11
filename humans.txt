@@ -1,15 +1,16 @@
 # humanstxt.org
 
 /* TEAM */
-Website Owner: Shlomit
+Founder: Shlomit Liberty, MS, MA, CCC-SLP, BCPA
+Role: Board Certified Independent Patient Advocate
 Contact: shlomit@patientpathnyc.com
 Location: New York City, NY
 
 /* SITE */
-Last update: 2025/01/05
-Standards: HTML5, CSS3
-Components: Responsive Design, Schema.org Structured Data
-Software: Custom HTML/CSS/JavaScript, PHP
+Last update: 2026/05/11
+Standards: HTML5, CSS3, Schema.org JSON-LD
+Components: Responsive Design, structured data (MedicalBusiness, Person, Article, FAQPage, Review, BreadcrumbList, WebSite)
+Software: Static HTML/CSS/JavaScript
 
 /* THANKS */
-Built with care for patient advocacy services in NYC
+Built with care for the families who need help navigating a hospital stay.

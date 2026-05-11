@@ -1,216 +1,145 @@
 {
   "@context": "https://schema.org",
-  "@type": "MedicalBusiness",
-  "name": "Patient Path NYC",
-  "alternateName": "Patient Path New York City",
-  "description": "Professional patient advocacy services for hospitalized patients in New York City. Board certified independent patient advocate offering personalized care coordination, medical crisis management, and discharge planning.",
-  "url": "https://www.patientpathnyc.com",
-  "telephone": "+1-917-283-2765",
-  "email": "shlomit@patientpathnyc.com",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "New York",
-    "addressRegion": "NY",
-    "addressCountry": "US"
-  },
-  "geo": {
-    "@type": "GeoCoordinates",
-    "latitude": "40.7128",
-    "longitude": "-74.0060"
-  },
-  "areaServed": [
+  "@graph": [
     {
-      "@type": "City",
-      "name": "New York City",
-      "containedInPlace": {
-        "@type": "State",
-        "name": "New York"
-      }
-    },
-    {
-      "@type": "AdministrativeArea",
-      "name": "Manhattan"
-    },
-    {
-      "@type": "AdministrativeArea",
-      "name": "Brooklyn"
-    },
-    {
-      "@type": "AdministrativeArea",
-      "name": "Queens"
-    },
-    {
-      "@type": "AdministrativeArea",
-      "name": "The Bronx"
-    },
-    {
-      "@type": "AdministrativeArea",
-      "name": "Nassau County",
-      "containedInPlace": {
-        "@type": "State",
-        "name": "New York"
-      }
-    },
-    {
-      "@type": "AdministrativeArea",
-      "name": "Westchester County",
-      "containedInPlace": {
-        "@type": "State",
-        "name": "New York"
-      }
-    },
-    {
-      "@type": "AdministrativeArea",
-      "name": "South Fairfield County",
-      "containedInPlace": {
-        "@type": "State",
-        "name": "Connecticut"
-      }
-    }
-  ],
-  "founder": {
-    "@type": "Person",
-    "name": "Shlomit Liberty",
-    "givenName": "Shlomit",
-    "familyName": "Liberty",
-    "honorificSuffix": ["MS", "MA", "CCC-SLP", "BCPA"],
-    "jobTitle": "Board Certified Independent Patient Advocate",
-    "description": "Board Certified Independent Patient Advocate specialized in complex medical conditions, personal medical crisis management, and care navigation. Medical Speech Language Pathologist with more than a decade of healthcare experience.",
-    "email": "shlomit@patientpathnyc.com",
-    "alumniOf": [
-      {
-        "@type": "EducationalOrganization",
-        "name": "New York University",
-        "department": "Clinical Master's Degree in Speech Language Pathology"
-      }
-    ],
-    "worksFor": {
       "@type": "MedicalBusiness",
-      "name": "Patient Path NYC"
-    },
-    "hasCredential": [
-      {
-        "@type": "EducationalOccupationalCredential",
-        "credentialCategory": "Board Certification",
-        "name": "Board Certified Patient Advocate (BCPA)"
+      "@id": "https://www.patientpathnyc.com/#business",
+      "name": "Patient Path NYC",
+      "alternateName": "Patient Path New York City",
+      "description": "Independent patient advocacy practice in New York City. Board Certified Patient Advocate providing personal medical crisis management, care coordination, and safe discharge planning for hospitalized adults and their families.",
+      "url": "https://www.patientpathnyc.com",
+      "telephone": "+1-917-283-2765",
+      "email": "shlomit@patientpathnyc.com",
+      "founder": { "@id": "https://www.patientpathnyc.com/about.html#shlomit" },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "New York",
+        "addressRegion": "NY",
+        "addressCountry": "US"
       },
-      {
-        "@type": "EducationalOccupationalCredential",
-        "credentialCategory": "Professional License",
-        "name": "Certificate of Clinical Competence in Speech-Language Pathology (CCC-SLP)"
-      }
-    ],
-    "memberOf": [
-      {
-        "@type": "Organization",
-        "name": "Patient Advocacy Board Certification (PABC)"
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "40.7128",
+        "longitude": "-74.0060"
       },
-      {
-        "@type": "Organization",
-        "name": "Global Nurses Association (GNA)"
+      "areaServed": [
+        { "@type": "City", "name": "New York City" },
+        { "@type": "AdministrativeArea", "name": "Manhattan" },
+        { "@type": "AdministrativeArea", "name": "Brooklyn" },
+        { "@type": "AdministrativeArea", "name": "Queens" },
+        { "@type": "AdministrativeArea", "name": "The Bronx" },
+        { "@type": "AdministrativeArea", "name": "Nassau County" },
+        { "@type": "AdministrativeArea", "name": "Westchester County" },
+        { "@type": "AdministrativeArea", "name": "South Fairfield County, Connecticut" }
+      ],
+      "medicalSpecialty": [
+        "Patient Advocacy",
+        "Care Coordination",
+        "Discharge Planning",
+        "Medical Crisis Management"
+      ],
+      "knowsAbout": [
+        "Hospital stay preparation",
+        "Patient advocacy",
+        "Medical history organization",
+        "Symptom communication",
+        "Hospital-acquired infection prevention",
+        "Discharge planning",
+        "Rehabilitation options",
+        "Cognitive decline prevention during hospitalization",
+        "Healthcare proxy and advance directives",
+        "Dysphagia and swallowing disorders"
+      ],
+      "paymentAccepted": ["Cash", "Check", "Credit Card"],
+      "currenciesAccepted": "USD",
+      "priceRange": "Contact for pricing",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5.0",
+        "reviewCount": "8",
+        "bestRating": "5",
+        "worstRating": "1"
       },
-      {
-        "@type": "Organization",
-        "name": "Pulse"
-      },
-      {
-        "@type": "Organization",
-        "name": "The Circle"
-      },
-      {
-        "@type": "Organization",
-        "name": "HealthAdvocateX"
-      },
-      {
-        "@type": "Organization",
-        "name": "NAHAC"
-      }
-    ]
-  },
-  "hasOfferCatalog": {
-    "@type": "OfferCatalog",
-    "name": "Patient Advocacy Services",
-    "itemListElement": [
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Getting Started - Initial Consultation",
-          "description": "Free 20-minute intake meeting where we answer your questions and explain our process. In-depth review of medical history and current status. Work with you and your family to understand your options and wishes. Help communicate your choices to your team.",
-          "provider": {
-            "@type": "MedicalBusiness",
-            "name": "Patient Path NYC"
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Patient Advocacy Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Initial Consultation",
+              "description": "Free 20-minute intake to discuss the situation, walk through the process, and determine how best to support patient and family.",
+              "serviceType": "Initial Consultation"
+            },
+            "price": "0",
+            "priceCurrency": "USD"
           },
-          "category": "Patient Advocacy",
-          "serviceType": "Initial Consultation"
-        },
-        "price": "0",
-        "priceCurrency": "USD"
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Hospital Care Management",
-          "description": "Continuous tracking of medical status with daily medical chart reviews and team communication. Ensure treatment plans are being followed. In-person hospital visits as needed. Attend family meetings and help resolve conflicts.",
-          "provider": {
-            "@type": "MedicalBusiness",
-            "name": "Patient Path NYC"
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Hospital Care Management",
+              "description": "Daily chart review, team communication, in-person bedside visits, and family meeting facilitation during inpatient admissions.",
+              "serviceType": "In-Hospital Advocacy"
+            }
           },
-          "category": "Patient Advocacy",
-          "serviceType": "In-Hospital Advocacy"
-        },
-        "priceSpecification": {
-          "@type": "PriceSpecification",
-          "price": "Contact for pricing",
-          "priceCurrency": "USD"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Discharge Planning and Recovery Support",
-          "description": "Ensure discharge plan is safe and aligned with your goals. Research and advise next steps - at home or in a facility. Connect you with network of specialists. Stay actively involved until you safely transition to appropriate next level of care.",
-          "provider": {
-            "@type": "MedicalBusiness",
-            "name": "Patient Path NYC"
-          },
-          "category": "Patient Advocacy",
-          "serviceType": "Discharge Planning"
-        },
-        "priceSpecification": {
-          "@type": "PriceSpecification",
-          "price": "Contact for pricing",
-          "priceCurrency": "USD"
-        }
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Discharge Planning and Recovery Support",
+              "description": "Reviews discharge plan for safety and alignment with patient goals; advises on next level of care; connects to specialists; stays involved through transition.",
+              "serviceType": "Discharge Planning"
+            }
+          }
+        ]
       }
-    ]
-  },
-  "medicalSpecialty": [
-    "Patient Advocacy",
-    "Care Coordination",
-    "Discharge Planning",
-    "Medical Crisis Management"
-  ],
-  "availableService": [
-    {
-      "@type": "MedicalProcedure",
-      "name": "Medical Chart Review",
-      "description": "Daily review of medical records, physician entries, nursing updates, labs, imaging, and medication administration records"
     },
     {
-      "@type": "MedicalProcedure",
-      "name": "Care Team Communication",
-      "description": "Direct communication with physicians, nurses, therapists, and case management staff to ensure coordinated care"
+      "@type": "Person",
+      "@id": "https://www.patientpathnyc.com/about.html#shlomit",
+      "name": "Shlomit Liberty",
+      "givenName": "Shlomit",
+      "familyName": "Liberty",
+      "honorificSuffix": ["MS", "MA", "CCC-SLP", "BCPA"],
+      "jobTitle": "Board Certified Independent Patient Advocate",
+      "description": "Board Certified Independent Patient Advocate and founder of Patient Path NYC. A medical Speech-Language Pathologist with more than a decade of clinical experience at New York Presbyterian Weill Cornell, Stanford University Hospital, and San Jose Regional Medical Center.",
+      "email": "shlomit@patientpathnyc.com",
+      "telephone": "+1-917-283-2765",
+      "url": "https://www.patientpathnyc.com/about.html",
+      "image": "https://www.patientpathnyc.com/images/shlomit.jpg",
+      "worksFor": { "@id": "https://www.patientpathnyc.com/#business" },
+      "alumniOf": [
+        { "@type": "EducationalOrganization", "name": "New York University", "department": "MS, Communicative Sciences and Disorders" },
+        { "@type": "EducationalOrganization", "name": "The Hebrew University of Jerusalem", "department": "MA, Linguistics" },
+        { "@type": "EducationalOrganization", "name": "The Hebrew University of Jerusalem", "department": "BA, Cognitive Science and Linguistics" }
+      ],
+      "hasCredential": [
+        { "@type": "EducationalOccupationalCredential", "credentialCategory": "Board Certification", "name": "Board Certified Patient Advocate (BCPA)" },
+        { "@type": "EducationalOccupationalCredential", "credentialCategory": "Professional License", "name": "Certificate of Clinical Competence in Speech-Language Pathology (CCC-SLP)" }
+      ],
+      "memberOf": [
+        { "@type": "Organization", "name": "Patient Advocacy Board Certification (PABC)" },
+        { "@type": "Organization", "name": "NAHAC" },
+        { "@type": "Organization", "name": "HealthAdvocateX" },
+        { "@type": "Organization", "name": "Pulse Center for Patient Safety Education & Advocacy" },
+        { "@type": "Organization", "name": "The Circle" },
+        { "@type": "Organization", "name": "Global Nurses Association (GNA)" }
+      ],
+      "award": [
+        "Best Relief Staff, Stanford University Hospital Rehab Department, 2021",
+        "ASHA Award for Continuing Education (ACE), 2019–2023"
+      ]
     },
     {
-      "@type": "MedicalProcedure",
-      "name": "Family Meeting Facilitation",
-      "description": "Attendance and facilitation of family meetings to ensure clear communication and decision-making"
+      "@type": "WebSite",
+      "@id": "https://www.patientpathnyc.com/#website",
+      "url": "https://www.patientpathnyc.com",
+      "name": "Patient Path NYC",
+      "description": "Independent patient advocacy in New York City.",
+      "publisher": { "@id": "https://www.patientpathnyc.com/#business" },
+      "inLanguage": "en-US"
     }
-  ],
-  "paymentAccepted": ["Cash", "Check", "Credit Card"],
-  "currenciesAccepted": "USD",
-  "priceRange": "Contact for pricing"
+  ]
 }
