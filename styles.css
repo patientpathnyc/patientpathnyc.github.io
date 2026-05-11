@@ -1095,6 +1095,7 @@ footer .container {
 .story-portrait img {
     width: 100%;
     max-width: 300px;
+    margin: 0 auto;
     border-radius: var(--radius-lg);
     box-shadow: var(--shadow-soft);
 }
