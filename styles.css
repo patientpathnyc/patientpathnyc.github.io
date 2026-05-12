@@ -344,7 +344,7 @@ nav .container {
 }
 
 .hero .eyebrow {
-    color: rgba(255, 255, 255, 0.7);
+    color: #ffffff;
     margin-bottom: 1rem;
 }
 
@@ -497,7 +497,7 @@ section.faq-section {
 
 .service-card img {
     width: 100%;
-    aspect-ratio: 10 / 3.5;
+    aspect-ratio: 10 / 6;
     object-fit: cover;
     margin-top: auto;
     border-bottom-left-radius: 0;
@@ -934,6 +934,11 @@ footer .container {
     margin-bottom: 0.75rem;
     font-size: 1rem;
     letter-spacing: 0.14em;
+    color: var(--deep);
+    text-decoration: underline;
+    text-decoration-color: var(--accent);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.5rem;
 }
 
 /* --------------------------------------------------------------------------
@@ -1262,6 +1267,8 @@ footer .container {
 .testimonials .eyebrow { color: rgba(255, 255, 255, 0.7); }
 
 .testimonials h2 { margin-bottom: 3rem; }
+
+.testimonials .section-eyebrow { margin-bottom: 3rem; }
 
 .testimonials-carousel {
     display: grid;
