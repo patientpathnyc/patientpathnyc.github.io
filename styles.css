@@ -1298,8 +1298,9 @@ footer .container {
 }
 
 .testimonial {
-    flex: 0 0 calc((min(var(--container), 100vw - 12rem) - 3rem) / 3);
-    max-width: 22rem;
+    /* Two cards visible + ~6rem peek of a third. */
+    flex: 0 0 calc((min(var(--container), 100vw - 12rem) - 9rem) / 2);
+    max-width: 32rem;
     background: var(--paper);
     color: var(--ink);
     border-radius: var(--radius-lg);
@@ -1356,12 +1357,17 @@ footer .container {
     background: transparent;
     border: 1px solid rgba(255, 255, 255, 0.35);
     color: #fff;
-    font-size: 1.1rem;
     cursor: pointer;
     transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.testimonials-nav svg {
+    width: 18px;
+    height: 18px;
+    display: block;
 }
 
 .testimonials-nav:hover {
@@ -1907,8 +1913,10 @@ footer .container {
     .testimonials-prev { grid-column: 1; grid-row: 2; justify-self: end; }
     .testimonials-next { grid-column: 2; grid-row: 2; justify-self: start; }
     .testimonials-nav { width: 36px; height: 36px; }
+    .testimonials-nav svg { width: 16px; height: 16px; }
+    /* Card sized so the next one peeks ~5.5rem at the right edge, signaling "more". */
     .testimonial {
-        flex: 0 0 calc(100vw - 6rem);
+        flex: 0 0 calc(100vw - 10rem);
         max-width: none;
         min-width: 0;
     }
