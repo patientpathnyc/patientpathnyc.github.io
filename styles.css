@@ -1286,6 +1286,7 @@ footer .container {
     scroll-behavior: smooth;
     scrollbar-width: none;
     -ms-overflow-style: none;
+    container-type: inline-size;
 }
 
 .testimonials-viewport::-webkit-scrollbar { display: none; }
@@ -1298,8 +1299,10 @@ footer .container {
 }
 
 .testimonial {
-    /* Two cards visible + ~6rem peek of a third. */
-    flex: 0 0 calc((min(var(--container), 100vw - 12rem) - 9rem) / 2);
+    /* Two cards + two 1.5rem gaps + ~6rem peek of a third = 100% of viewport.
+       Sized against the viewport (cqw) so it adapts to whatever space the
+       carousel actually gets, regardless of arrow size or screen width. */
+    flex: 0 0 calc((100cqw - 9rem) / 2);
     max-width: 32rem;
     background: var(--paper);
     color: var(--ink);
@@ -1914,9 +1917,9 @@ footer .container {
     .testimonials-next { grid-column: 2; grid-row: 2; justify-self: start; }
     .testimonials-nav { width: 36px; height: 36px; }
     .testimonials-nav svg { width: 16px; height: 16px; }
-    /* Card sized so the next one peeks ~5.5rem at the right edge, signaling "more". */
+    /* One card + 1.5rem gap + ~5.5rem peek = 100% of viewport. */
     .testimonial {
-        flex: 0 0 calc(100vw - 10rem);
+        flex: 0 0 calc(100cqw - 7rem);
         max-width: none;
         min-width: 0;
     }
