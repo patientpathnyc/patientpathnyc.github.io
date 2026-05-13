@@ -91,4 +91,36 @@ document.addEventListener('DOMContentLoaded', function() {
             else if (e.key === 'ArrowRight') { e.preventDefault(); step(1); }
         });
     }
+
+    // "Read full review" modal — populate from the card's hidden full-quote element
+    // and open a native <dialog> (handles focus trap + Esc-to-close for free).
+    const modal = document.querySelector('.testimonial-modal');
+    if (modal && typeof modal.showModal === 'function') {
+        const modalMeta = modal.querySelector('.testimonial-modal-meta');
+        const modalQuote = modal.querySelector('.testimonial-modal-quote');
+        const modalClose = modal.querySelector('.testimonial-modal-close');
+
+        document.querySelectorAll('.testimonial-read-more').forEach((btn) => {
+            btn.addEventListener('click', () => {
+                const card = btn.closest('.testimonial');
+                if (!card) return;
+                modalMeta.innerHTML = card.querySelector('.testimonial-meta').innerHTML;
+                modalQuote.innerHTML = card.querySelector('.testimonial-full').innerHTML;
+                modalQuote.scrollTop = 0;
+                modal.showModal();
+            });
+        });
+
+        modalClose.addEventListener('click', () => modal.close());
+
+        // Click outside the dialog body (on the backdrop) closes it.
+        // Use bounding rect: backdrop clicks bubble up as e.target === modal
+        // but the coordinates fall outside the dialog's visible box.
+        modal.addEventListener('click', (e) => {
+            const rect = modal.getBoundingClientRect();
+            const inside = e.clientX >= rect.left && e.clientX <= rect.right
+                && e.clientY >= rect.top && e.clientY <= rect.bottom;
+            if (!inside) modal.close();
+        });
+    }
 });
