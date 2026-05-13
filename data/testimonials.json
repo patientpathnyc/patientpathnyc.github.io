@@ -9,60 +9,77 @@
   },
   "items": [
     {
-      "name": "Alyssa W.",
-      "relationship": "Spouse of patient",
-      "date": "2026-02",
-      "rating": 5,
-      "quote": "Shlomit has the intelligence, compassion, and insight to guide families through the complexities of the medical world. […] With Shlomit by our side, we didn't just survive the chaos — we found guidance, understanding, and hope in a time that felt impossible."
-    },
-    {
-      "name": "Chelsea H.",
-      "relationship": "Spouse of patient",
-      "date": "2026-02",
-      "rating": 5,
-      "quote": "I cannot recommend Shlomit enough. After spending overwhelming days in the hospital with my husband […], I felt completely lost navigating doctors, medications, tests, and treatment plans. Right before discharge, I urgently needed an independent medical expert to help guide us — and that is exactly what Shlomit did. My only regret is not finding and hiring her sooner."
-    },
-    {
-      "name": "Jennifer D.",
-      "relationship": "Daughter of patient",
-      "date": "2025-12",
-      "rating": 5,
-      "quote": "We hired Shlomit during a difficult hospital stay […], and she was exceptional in every way. Her extensive medical knowledge and firsthand experience working in hospitals are invaluable. From the moment she arrived, she coordinated seamlessly with the many medical teams, kept our family informed, and explained every step of a complicated hospital process."
-    },
-    {
-      "name": "Ann Marie S.",
-      "relationship": "Patient",
-      "date": "2025-11",
-      "rating": 5,
-      "quote": "Developing a 'Patient Care Advocate' relationship with Shlomit Liberty was the absolute best investment that my adult son and daughter could have bestowed on me. Her professional background put her on equal footing with the medical team; she knew what to ask and how to position her requests for me so that they 'heard' her clearly. Shlomit is the best of the best."
-    },
-    {
       "name": "Brian B.",
       "relationship": "Son of patient",
       "date": "2025-09",
       "rating": 5,
-      "quote": "From the moment I connected with Shlomit Liberty, her combination of professionalism and heartfelt empathy completely reassured me. I was totally overwhelmed dealing with my mom's […] health issues and trying to make the right decisions. From the very first call, Shlomit made everything feel so much more manageable. She's incredibly knowledgeable, caring, and warm."
+      "quote": "[…] I was totally overwhelmed dealing with my mom’s numerous health issues and trying to make the right decisions. From the very first call, Shlomit made everything feel so much more manageable.",
+      "full_quote": "From the moment I connected with Shlomit Liberty at Patient Path NYC, her combination of professionalism and heartfelt empathy completely reassured me. I can’t say enough good things about her. I was totally overwhelmed dealing with my mom’s numerous health issues and trying to make the right decisions. From the very first call, Shlomit made everything feel so much more manageable. She explained what was going on in a way we could actually understand. She’s incredibly knowledgeable, caring and warm!",
+      "full_name": "Brian B"
     },
+    {
+      "name": "Alyssa W",
+      "relationship": "Spouse of patient",
+      "date": "2026-02",
+      "rating": 5,
+      "quote": "[…] With Shlomit by our side, we didn’t just survive the chaos — we found guidance, understanding, and hope in a time that felt impossible. […]",
+      "full_quote": "Shlomit has the intelligence, compassion, and insight to guide families through the complexities of the medical world. My husband’s sudden and challenging journey was overwhelming, and I quickly realized I couldn’t navigate it alone. Shlomit stepped in and helped us make sense of his medical needs while navigating the conflicting agendas that come with hospital and subacute care. With Shlomit by our side, we didn’t just survive the chaos—we found guidance, understanding, and hope in a time that felt impossible. Her support made an overwhelming experience feel manageable, and for that, we are profoundly grateful.",
+      "full_name": "Alyssa Weinstein"
+    },
+    {
+      "name": "Chelsea H",
+      "relationship": "Spouse of patient",
+      "date": "2026-02",
+      "rating": 5,
+      "quote": "[…] After spending 8 overwhelming days in the hospital with my husband following a traumatic brain injury, I felt completely lost […] My only regret is not finding and hiring her sooner.",
+      "full_quote": "I cannot recommend Shlomit enough. After spending 8 overwhelming days in the hospital with my husband following a traumatic brain injury, I felt completely lost navigating doctors, medications, tests, and treatment plans. Right before discharge, I urgently needed an independent medical expert to help guide us, and that is exactly what Shlomit did. She acts as a knowledgeable guide through an unfamiliar and stressful medical system, coordinating between care teams that don’t always communicate and educating families on their rights and options. She does all of this with strong ethical standards, very reasonable fees, and genuine flexibility. My only regret is not finding and hiring her sooner.",
+      "full_name": "Chelsea Hornick-Becker"
+    },
+    {
+      "name": "Jennifer D",
+      "relationship": "Daughter of patient",
+      "date": "2025-12",
+      "rating": 5,
+      "quote": "We hired Shlomit during a difficult hospital stay following my father's stroke […] Having Shlomit by our side was a blessing during one of the most overwhelming times of our lives. […]",
+      "full_quote": "We hired Shlomit during a difficult hospital stay following my father's stroke, and she was exceptional in every way! Her extensive medical knowledge and firsthand experience working in hospitals are invaluable. From the moment she arrived, she coordinated seamlessly with the many medical teams, kept our family informed, and explained every step of a complicated hospital process. Her presence brought immediate comfort and stability, and we saw a real improvement in my father the moment she became involved. Her compassion, professionalism, and dedication to her patients - and their families - is extraordinary. Having Shlomit by our side was a blessing during one of the most overwhelming times of our lives. I cannot recommend Shlomit highly enough.",
+      "full_name": "Jennifer DeSimone"
+    },
+    {
+      "name": "Ann M.",
+      "relationship": "Patient",
+      "date": "2025-11",
+      "rating": 5,
+      "quote": "[…] the absolute best investment that my adult son and daughter could have bestowed on me AND themselves. […] Shlomit is the best of the best!",
+      "full_quote": "Developing a “Patient Care Advocate” relationship with Shlomit Liberty was the absolute best investment that my adult son and daughter could have bestowed on me AND themselves. Her professional background put her on equal footing with the medical team; she knew what to ask and how to position her requests for me so that they “heard” her clearly. She was incredibly attentive and kept detailed notes that my children rcvd daily. It kept them from a ting telephone tag with doctors. Shlomit would literally chase down the medical staff she needed; a definitely person of action. The medical team also be requested herbco taxt info to refer her; talk about a magnificent endorsement. Shlomit is the best of the best!",
+      "full_name": "Ann Marie Sabath"
+    },
+
     {
       "name": "Andrea C.",
       "relationship": "Spouse of patient",
       "date": "2025-05",
       "rating": 5,
-      "quote": "The deep concern and care that she had for my husband's situation, and the exhaustive research that she did on our behalf, are above and beyond excellent. She communicated directly with my husband's care team […] and asked about every detail of his rehabilitation process and care plan after discharge. We could not have found a better advocate and a more efficient problem solver."
+      "quote": "[…] the exhaustive research that she did on our behalf are above and beyond excellent. […] We could not have found a better advocate and a more efficient problem solver!",
+      "full_quote": "I cannot thank Ms. Liberty enough for her help. The deep concern and care that she had for my husband's situation, the exhaustive research that she did on our behalf are above and beyond excellent. She communicated directly with my husband's care team at the Skilled Nursing Facility where he was. She asked about every detail of his rehabilitation process and about his care plan after his discharge. We could not have found a better advocate and a more efficient problem solver!",
+      "full_name": "Andrea Cukier"
     },
     {
       "name": "Tess S.",
       "relationship": "Spouse of patient",
       "date": "2025-11",
       "rating": 5,
-      "quote": "Shlomit Liberty has shown herself to be extremely knowledgeable in medical terms and conditions. This was very helpful to me during […] a very difficult and confounding time in the hospital. She is devoted and discreet, and her advocacy helped me navigate […]. She was kindness and efficiency personified."
+      "quote": "Shlomit […] aided me to navigate a very difficult and confounding time in the hospital. She was kindness and efficiency personified.",
+      "full_quote": "Shlomit Liberty has shown herself to be extremely knowledgeable in medical terms and conditions This was very helpful to me during the acute phase of my husbands stroke ,pneumonia and gastric issues. She is devoted and discrete and her advocacy aided me to navigate a very difficult and confounding time in the hospital She was kindness and efficiency personified.",
+      "full_name": "Tess Sholom"
     },
     {
       "name": "JK G.",
       "relationship": "Patient",
       "date": "2025-05",
       "rating": 5,
-      "quote": "She knows intimately the ins and outs of healthcare in the U.S., and she has helped me navigate the […] relatively tricky path to explain even my very own infirmities — which I thought I knew well — in a detailed, clear, and logical way to the powers that be. I recommend her without reservation whatsoever."
+      "quote": "[…] With her in your camp, you will get what you need and deserve, not simply what the authorities will grant.",
+      "full_quote": "I am so fortunate to have Shlomit Liberty as my patient advocate. She knows intimately the ins and outs of healthcare in the U.S., and she has helped me navigate the at times, as I have discovered, relatively tricky path to explain even my very own infirmities, which I thought I knew well, in a detailed, clear, and logical way to the powers that be. She knew to raise the appropriate questions at the opportune moment and to bring in the proper details (and minutiae) of my situation. I recommend her without reservation whatsoever to anyone in need of a patient advocate. With her in your camp, you will get what you need and deserve, not simply what the authorities will grant.",
+      "full_name": "JK Gillespie"
     }
   ]
 }
