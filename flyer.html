@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Patient Path NYC - Two-sided printable rack card flyer.">
+    <meta name="robots" content="noindex">
+    <title>Patient Path NYC - Flyer</title>
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* ==========================================================
+           Rack-card flyer: 3.67" wide x 8.5" tall, two sides
+           Backgrounds mirror the website sections:
+             - Front hero: dark gradient (same as .hero)
+             - Front contact strip: paper (same as .contact)
+             - Back services: cream (same as .services)
+             - Back schedule strip: paper (same as .contact)
+           ========================================================== */
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 4in;
+        }
+        body.flyer-rack {
+            background: #e9e4dc;
+            font-family: var(--font-body);
+            color: var(--ink);
+        }
+
+        .flyer-stage {
+            display: block;
+            margin: 0;
+            padding: 0;
+        }
+
+        .panel {
+            width: 4in;
+            height: 9in;
+            padding: 0;
+            background: var(--paper);
+            color: var(--ink);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            page-break-after: always;
+            break-after: page;
+        }
+        .panel:last-child {
+            page-break-after: auto;
+            break-after: auto;
+        }
+
+        /* ----- Shared bits ----- */
+        .panel-logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.08in;
+        }
+        .panel-logo img { display: block; width: auto; }
+        .panel-logo .wordmark {
+            font-family: var(--font-display);
+            letter-spacing: 0.01em;
+            line-height: 1;
+        }
+
+        .panel-eyebrow {
+            font-family: var(--font-body);
+            font-size: 7.5pt;
+            font-weight: 600;
+            letter-spacing: 0.22em;
+            text-transform: uppercase;
+            color: var(--accent);
+            margin: 0;
+        }
+
+        /* ==========================================================
+           FRONT PANEL
+           ========================================================== */
+        .panel--front .hero-zone {
+            background: linear-gradient(135deg, var(--deep) 0%, var(--ink) 100%);
+            color: #fff;
+            padding: 0.28in 0.3in 0.32in;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            flex: 1 1 auto;
+        }
+        .panel--front .panel-logo { margin-bottom: 0.18in; }
+        .panel--front .panel-logo img {
+            height: 0.32in;
+            filter: brightness(0) invert(1);
+        }
+        .panel--front .panel-logo .wordmark {
+            font-size: 12pt;
+            color: #fff;
+            font-weight: 500;
+        }
+
+        .panel--front .hero-photo {
+            width: 100%;
+            margin: 0 0 0.4in;
+            display: flex;
+            justify-content: center;
+        }
+        .panel--front .hero-photo img {
+            display: block;
+            width: 100%;
+            height: auto;
+            max-width: 100%;
+            border-radius: var(--radius);
+        }
+
+        .panel--front .hero-name {
+            font-family: var(--font-display);
+            font-size: 24pt;
+            font-weight: 500;
+            color: #fff;
+            line-height: 1.05;
+            margin: 0 0 0.08in;
+            letter-spacing: 0.005em;
+        }
+        .panel--front .hero-eyebrow {
+            font-family: var(--font-body);
+            font-size: 8pt;
+            font-weight: 700;
+            letter-spacing: 0.22em;
+            text-transform: uppercase;
+            color: #fff;
+            margin: 0 0 0.14in;
+        }
+        .panel--front .hero-lede {
+            font-family: var(--font-display);
+            font-style: italic;
+            font-size: 12pt;
+            font-weight: 500;
+            line-height: 1.3;
+            color: rgba(255, 255, 255, 0.92);
+            margin: 0 0 0.1in;
+        }
+        .panel--front .hero-credentials {
+            font-size: 8pt;
+            color: rgba(255, 255, 255, 0.75);
+            letter-spacing: 0.015em;
+            margin: auto 0 0;
+            padding-top: 0.18in;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            width: 100%;
+        }
+
+        .panel--front .front-contact {
+            background: var(--paper);
+            padding: 0.22in 0.3in 0.26in;
+            text-align: center;
+            border-top: 1px solid var(--hairline);
+        }
+        .panel--front .front-contact .label {
+            font-size: 7pt;
+            letter-spacing: 0.22em;
+            text-transform: uppercase;
+            color: var(--accent);
+            font-weight: 600;
+            margin: 0 0 0.05in;
+        }
+        .panel--front .front-contact .phone {
+            font-family: var(--font-display);
+            font-size: 17pt;
+            font-weight: 600;
+            color: var(--deep);
+            margin: 0 0 0.04in;
+            line-height: 1.1;
+        }
+        .panel--front .front-contact .phone a { color: var(--deep); }
+        .panel--front .front-contact .email,
+        .panel--front .front-contact .web {
+            font-size: 9pt;
+            line-height: 1.4;
+            color: var(--ink);
+            margin: 0;
+        }
+        .panel--front .front-contact a { color: var(--ink); }
+
+        /* ==========================================================
+           BACK PANEL
+           ========================================================== */
+        .panel--back .services-zone {
+            background: var(--cream);
+            padding: 0.3in 0.3in 0.26in;
+            flex: 1 1 auto;
+            display: flex;
+            flex-direction: column;
+        }
+        .panel--back .panel-logo {
+            padding-bottom: 0.16in;
+            border-bottom: 1px solid var(--hairline);
+            margin-bottom: 0.2in;
+        }
+        .panel--back .panel-logo img { height: 0.3in; }
+        .panel--back .panel-logo .wordmark {
+            font-size: 11pt;
+            color: var(--deep);
+            font-weight: 500;
+        }
+
+        .panel--back .back-eyebrow {
+            text-align: center;
+            margin-bottom: 0.08in;
+        }
+        .panel--back .back-heading {
+            font-family: var(--font-display);
+            font-size: 16pt;
+            font-weight: 500;
+            color: var(--deep);
+            text-align: center;
+            margin: 0 0 0.18in;
+            line-height: 1.15;
+        }
+
+        .services-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 0.14in;
+        }
+        .services-list > li {
+            background: var(--paper);
+            padding: 0.14in 0.18in 0.16in;
+            border-radius: var(--radius);
+            border: 1px solid var(--hairline);
+        }
+        .services-list > li h3 {
+            font-family: var(--font-display);
+            font-size: 12pt;
+            font-weight: 600;
+            color: var(--deep);
+            margin: 0 0 0.06in;
+            line-height: 1.1;
+        }
+        .services-list > li p {
+            font-size: 9pt;
+            line-height: 1.5;
+            color: var(--ink);
+            margin: 0;
+        }
+
+        .panel--back .testimonial-zone {
+            margin: auto 0;
+            padding: 0.2in 0.3in;
+            text-align: center;
+            border-top: 1px solid var(--hairline);
+            border-bottom: 1px solid var(--hairline);
+        }
+        .panel--back .testimonial-zone blockquote {
+            font-family: var(--font-display);
+            font-style: italic;
+            font-size: 11pt;
+            line-height: 1.35;
+            color: var(--ink);
+            margin: 0 0 0.1in;
+            quotes: none;
+        }
+        .panel--back .testimonial-zone blockquote::before,
+        .panel--back .testimonial-zone blockquote::after { content: none; }
+        .panel--back .testimonial-zone .attribution {
+            font-size: 8pt;
+            color: var(--muted);
+            letter-spacing: 0.04em;
+            margin: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            gap: 0.1in;
+        }
+        .panel--back .testimonial-zone .attribution strong {
+            color: var(--ink);
+            font-weight: 600;
+        }
+        .panel--back .testimonial-zone .stars {
+            color: var(--accent);
+            font-size: 9pt;
+            letter-spacing: 0.12em;
+            white-space: nowrap;
+        }
+
+        .panel--back .schedule-zone {
+            background: var(--paper);
+            padding: 0.22in 0.3in 0.28in;
+            text-align: center;
+            border-top: 1px solid var(--hairline);
+        }
+        .panel--back .schedule-zone .schedule-eyebrow {
+            font-size: 7pt;
+            letter-spacing: 0.22em;
+            text-transform: uppercase;
+            color: var(--accent);
+            font-weight: 600;
+            margin: 0 0 0.06in;
+        }
+        .panel--back .schedule-zone .schedule-heading {
+            font-family: var(--font-display);
+            font-size: 14pt;
+            font-weight: 600;
+            color: var(--deep);
+            line-height: 1.2;
+            margin: 0 0 0.06in;
+        }
+        .panel--back .schedule-zone .schedule-copy {
+            font-size: 8.5pt;
+            line-height: 1.45;
+            color: var(--ink);
+            margin: 0 0 0.1in;
+        }
+        .panel--back .schedule-zone .schedule-contact {
+            font-size: 9.5pt;
+            line-height: 1.5;
+            color: var(--ink);
+            margin: 0;
+        }
+        .panel--back .schedule-zone .schedule-contact .phone {
+            font-weight: 600;
+            color: var(--deep);
+            font-size: 11pt;
+        }
+        .panel--back .schedule-zone .schedule-contact a { color: var(--ink); }
+        .panel--back .schedule-zone .schedule-contact .phone a { color: var(--deep); }
+
+        /* ==========================================================
+           Print
+           ========================================================== */
+        @page {
+            size: 4in 9in;
+            margin: 0;
+        }
+        @media print {
+            body.flyer-rack {
+                background: #fff;
+                padding: 0;
+            }
+            .flyer-stage { display: block; gap: 0; }
+            .panel { margin: 0; }
+            /* Force dark gradient to print */
+            .panel--front .hero-zone {
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+            .panel--back .services-zone {
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+        }
+    </style>
+</head>
+<body class="flyer-rack">
+    <div class="flyer-stage">
+        <!-- =================== FRONT =================== -->
+        <section class="panel panel--front" aria-label="Flyer front">
+            <div class="hero-zone">
+                <div class="panel-logo">
+                    <img src="images/logo.png" alt="Patient Path NYC">
+                </div>
+
+                <div class="hero-photo">
+                    <img src="images/shlomit.jpg" alt="Shlomit Liberty, Board Certified Patient Advocate">
+                </div>
+
+                <h1 class="hero-name">Shlomit Liberty</h1>
+                <p class="hero-eyebrow">Medical Crisis Manager</p>
+                <p class="hero-lede">Helping New Yorkers navigate complex hospital stays, rehabilitation, and safe discharge.</p>
+                <p class="hero-credentials">Board Certified Independent Patient Advocate <br>MS, MA, CCC-SLP, BCPA</p>
+            </div>
+        </section>
+
+        <!-- =================== BACK =================== -->
+        <section class="panel panel--back" aria-label="Flyer back">
+            <div class="services-zone">
+                <div class="panel-logo">
+                    <img src="images/logo.png" alt="Patient Path NYC">
+                </div>
+
+                <p class="panel-eyebrow back-eyebrow">How we work together</p>
+                
+                <ul class="services-list">
+                    <li>
+                        <h3>Getting started</h3>
+                        <p>Call us to share your current status and needs. 
+                        Understand your options going forward, and learn how we can work together.</p>
+                    </li>
+                    <li>
+                        <h3>At the hospital</h3>
+                        <p>Daily medical chart reviews, treatment plan tracking, constant communication with you, your medical teams, and your family.</p>
+                    </li>
+                    <li>
+                        <h3>Before discharge</h3>
+                        <p>Confirm the discharge plan is safe and aligned with your goals. Help with facility research, or top specialists for work at home.</p>
+                    </li>
+                </ul>
+
+            
+                <p class="panel-eyebrow back-eyebrow">What patients & families say</p>
+                
+                <div class="testimonial-zone">
+                    <blockquote>&ldquo;With Shlomit by our side, we didn&rsquo;t just survive the chaos - we found guidance, understanding, and hope in a time that felt impossible.&rdquo;</blockquote>
+                    <p class="attribution">
+                        <span><strong>Alyssa W.</strong> &middot; Spouse of patient</span>
+                        <span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="schedule-zone">
+                <p class="schedule-eyebrow">Call to schedule a meeting</p>
+                <p class="schedule-contact">
+                    <span class="phone"><a href="tel:9172832765">(917) 283-2765</a></span><br>
+                    <a href="mailto:shlomit@patientpathnyc.com">Shlomit@PatientPathNYC.com</a><br>
+                    <a href="https://www.patientpathnyc.com">PatientPathNYC.com</a>
+                </p>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
